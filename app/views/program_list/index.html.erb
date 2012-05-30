@@ -1,0 +1,32 @@
+<%#if @program_list%>
+<%= render :partial => "layouts/first" %>
+
+
+<h1>Listing program List</h1>
+
+<table>
+  <tr>
+    <th>ProgramList name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<% @program_list.each do |programlist| %>
+  <tr>
+    <td><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
+    <%= link_to "#{programlist.name}",events_path(:pl => programlist.id) %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'New Event', new_event_path(:pl =>programlist.id)%></td>
+    
+  </tr>
+  
+<% end %>
+<tr><%= link_to 'New Program List', new_program_list_path(:pg=>params[:pg]) %></tr>
+</table>
+
+
+
+
+<%#else%>
+
+<%#end%>

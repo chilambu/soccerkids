@@ -1,0 +1,60 @@
+
+<%= render :partial => "layouts/first" %>
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;">
+<u><b><div style="position:absolute; left:100px; top:150px; width:600px; height:7px; ; ;text-align:center">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Firstname:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.firstname %>
+</p>
+ 
+<p>
+  <b>Lastname:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.lastname %>
+</p>
+
+<p>
+  <b>Addressline1:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.addressline1 %>
+</p>
+
+<p>
+  <b>Addressline2:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.addressline2 %>
+</p>
+
+<p>
+  <b>City:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.city %>
+</p>
+
+<p>
+  <b>Zip:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.zip %>
+</p>
+
+<p>
+  <b>State:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.state %>
+</p>
+
+<p>
+  <b>Home phone:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.home_phone %>
+</p>
+
+<p>
+  <b>Alternate phone:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.alternate_phone %>
+</p>
+
+<p>
+  <b>Alternate email:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= current_user.alternate_email %>
+</p> <br><br>
+
+
+<%= link_to 'Edit', home_editparent_path(current_user) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= link_to 'Back', '/programs' %>
+

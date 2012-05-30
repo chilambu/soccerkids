@@ -1,0 +1,62 @@
+
+<%= render :partial => "layouts/first" %>
+<h1>Listing programs</h1>
+<DIV  style="position:absolute; left:22px; top:250px; width:176px; height:26px;; overflow:visible">
+<% @programs.each do |@program| %>
+
+  <%if 1==1%>
+  
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
+   <%= link_to "#{@program.name}","program_list?pg="+@program.id.to_s%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <%#= link_to "Add Product", '/pages/product?param1=value1&param2=value2' %>
+          <%= link_to 'ShowALL',events_path(:pg =>@program.id)%>
+	   <%#= link_to 'New ProgramList', new_program_list_path(:pg =>@program.id)%></li><br><br >  </br>
+	
+   <%else%>
+         <%= link_to @program.name,'#', :onclick => "display('#{@program.name}');" %><br/>
+
+           <% @program.programlists.each do |pl|%>
+              <div id="<%= @program.name%>" style="display:none">    
+                 <%= link_to pl.name, :onclick => "display('#{pl.name}');" %><br/>
+              </div>
+                  <%pl.events.each do |ev|%>
+                     <div id="<%= pl.name%>" style="display:none",>
+                       <%=link_to ev.name,events_path(ev.id)%>
+                    </div><br/>
+                   <%end%>
+              <%end%>
+         <end>
+<% end %>
+<% end %>
+
+<script>
+</b></u></span></div>
+function display(id){
+    document.getElementById(id).style.display=='block' ? document.getElementById(id).style.display='none' : document.getElementById(id).style.display='block';
+
+}
+</script>
+<DIV id=u21 style="position:absolute; left:103px; top:-55px; width:102px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:16pt;"><b>Programs list</b></span></DIV></DIV>
+<DIV id=u22 style="position:absolute; left:90px; top:-100px; width:610px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Here is the list of the programs in the coming seasons.... To view the details of a particular program, just click the link below.....</span></DIV></DIV>
+</DIV>
+
+
+
+<DIV id=ou24 style="position:absolute; left:45px; top:645px; width:251px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-60px; top:-3px; width:259px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Program list_files/u24.png',sizingMethod='scale');
+"><img style="width:259px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="/images/Program list_files/u24.png" border="0" alt=""></span>
+
+</DIV>
+
+
+
+
+
+
+
+

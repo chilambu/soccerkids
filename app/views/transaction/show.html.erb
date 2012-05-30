@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @transaction.first_name %>
+</p>
+
+<p>
+  <b>Middle name:</b>
+  <%= @transaction.middle_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @transaction.last_name %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @transaction.gender %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @transaction.dob %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @transaction.user_id %>
+</p>
+
+<p>
+  <b>School name:</b>
+  <%= @transaction.school_name %>
+</p>
+
+<p>
+  <b>Registrant info:</b>
+  <%= @transaction.registrant_info %>
+</p>
+
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>

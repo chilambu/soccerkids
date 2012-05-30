@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<% if @user.present? %>
+<p>
+  <b>Firstname:</b>
+  <%= @parent.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @parent.lastname %>
+</p>
+
+<p>
+  <b>Addressline1:</b>
+  <%= @parent.addressline1 %>
+</p>
+
+<p>
+  <b>Addressline2:</b>
+  <%= @parent.addressline2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @parent.city %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @parent.zip %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @parent.state %>
+</p>
+
+<p>
+  <b>Home phone:</b>
+  <%= @parent.home_phone %>
+</p>
+
+<p>
+  <b>Alternate phone:</b>
+  <%= @parent.alternate_phone %>
+</p>
+
+<p>
+  <b>Alternate email:</b>
+  <%= @parent.alternate_email %>
+</p>
+
+
+<%= link_to 'Edit', edit_parent_path(@parent) %> |
+<%= link_to 'Back', parents_path %>

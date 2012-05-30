@@ -1,0 +1,101 @@
+
+
+<%= render :partial => "layouts/first" %>
+
+
+<DIV id=u17 style="position:absolute; left:70px; top:122px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u17_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Program Details</b></span></DIV></DIV>
+<DIV id=ou18 style="position:absolute; left:100px; top:150px; width:511px; height:261px;; overflow:visible">
+</DIV>
+<DIV id=u18container style="position:absolute; left:100px; top:150px; width:511px; height:261px;; overflow:visible">
+
+<DIV id=u19 style="position:absolute; left:2px; top:122px; width:506px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u18 src="Resources/transparent.gif" style="position:absolute; left:100px; top:150px; width:510px; height:260px"  >
+
+<DIV id=u20 style="position:absolute; left:144px; top:180px; width:117px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u20_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program name:</span></DIV></DIV>
+<DIV id=u21 style="position:absolute; left:107px; top:221px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program description: </span></DIV></DIV>
+<DIV id=u22 style="position:absolute; left:130px; top:296px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program location:</span></DIV></DIV>
+<DIV id=u23 style="position:absolute; left:260px; top:296px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">  <%= @event.name %></span></DIV></DIV>
+<DIV id=u24 style="position:absolute; left:254px; top:180px; width:320px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u24_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= @event.name %></span></DIV></DIV>
+<DIV id=u25 style="position:absolute; left:260px; top:217px; width:340px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u25_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">This class taught by Coach  <%= @event.coach %> Tuition is <%= @event.tuition %> for  <%= @event.dates %>class meetings.</span></DIV></DIV>
+<DIV id=u26 style="position:absolute; left:169px; top:260px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u26_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Class Time:</span></DIV></DIV>
+<DIV id=u27 style="position:absolute; left:260px; top:260px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u27_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><%= @event.from_time %> </span></DIV></DIV>
+<DIV id=u28 style="position:absolute; left:196px; top:331px; width:59px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u28_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Status:</span></DIV></DIV>
+<DIV id=u29 style="position:absolute; left:260px; top:331px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u29_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">  <%= @event.status %></span></DIV></DIV>
+<DIV id=ou30 style="position:absolute; left:326px; top:291px; width:81px; height:26px;; overflow:visible">
+
+
+</DIV>
+<DIV id=u30container style="position:absolute; left:226px; top:391px; width:81px; height:26px;; overflow:visible">
+<h2>Listing players</h2>
+
+<table>
+  <tr>
+    <th>First name</th>
+
+  
+  </tr>
+
+<% @players.each do |player| %>
+  <tr>
+
+       <td><%#= link_to player.first_name, "/events/full/#{@event.id}",[@player.id]%>
+                <%#= link_to  player.first_name, like_path(answer), :add_param=>2 , :remote=>"true" ,:method=>:post %>
+    <td>registerfor&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to player.first_name, "/events/full/#{@event.id}/#{player.id}"%></td>
+    <td><%= player.id %></td>
+ 
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+</DIV>
+<DIV id=u30container style="position:absolute; left:326px; top:291px; width:81px; height:26px;; overflow:visible">
+
+<DIV id=u31 style="position:absolute; left:2px; top:4.5px; width:76px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u31_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">View map</span></div></DIV></DIV>
+</DIV>
+<IMG id=u30 src="Resources/transparent.gif" style="position:absolute; left:326px; top:291px; width:80px; height:25px"  >
+
+<DIV id=u30ann style="font-size:1px; position:absolute; left:397px; top:287px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou32 style="position:absolute; left:86px; top:417px; width:221px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:229px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u32.png',sizingMethod='scale');
+"><img style="width:229px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u32.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u32container style="position:absolute; left:86px; top:417px; width:221px; height:26px;; overflow:visible">
+
+<DIV id=u33 style="position:absolute; left:2px; top:4.5px; width:216px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u33_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><u></u> </span><span style=" font-family:'Verdana'; color:#808080; font-size:9pt;"></span></div></DIV></DIV>
+</DIV>
+<IMG id=u32 src="Resources/transparent.gif" style="position:absolute; left:86px; top:417px; width:220px; height:25px"  >
+
+<DIV id=u32ann style="font-size:40px; position:absolute; left:300px; top:413px; width:100px; height:100px; overflow:visible"></DIV>
+
+<INPUT id=u34  type=submit value="Register for program" style="position:absolute; left:460px; top:377px; width:140px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u35 style="position:absolute; left:195px; top:362px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Tuition:</span></DIV></DIV>
+<DIV id=u36 style="position:absolute; left:260px; top:364px; width:40px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">$155 </span>
+
+

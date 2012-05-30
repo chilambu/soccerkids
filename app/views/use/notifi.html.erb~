@@ -1,0 +1,180 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<%= form_for(:@users) do |f| %>
+
+
+<DIV id=ou3 style="position:absolute; left:504px; top:55px; width:96px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:104px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u3.png',sizingMethod='scale');
+"><img style="width:104px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u3.png" border="0" alt=""></span>
+
+</DIV>
+
+
+<DIV id=ou5 style="position:absolute; left:593px; top:55px; width:79px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:87px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u5.png',sizingMethod='scale');
+"><img style="width:87px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u5.png" border="0" alt=""></span>
+
+</DIV>
+
+
+
+<DIV id=ou9 style="position:absolute; left:50px; top:54px; width:61px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:69px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u9.png',sizingMethod='scale');
+"><img style="width:69px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u9.png" border="0" alt=""></span>
+
+</DIV>
+
+
+<DIV id=u9ann style="font-size:1px; position:absolute; left:101px; top:50px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou11 style="position:absolute; left:227px; top:55px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u11.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u11.png" border="0" alt=""></span>
+
+</DIV>
+
+
+<DIV id=u11ann style="font-size:1px; position:absolute; left:368px; top:51px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou13 style="position:absolute; left:110px; top:55px; width:121px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:129px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u13.png',sizingMethod='scale');
+"><img style="width:129px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u13.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=ou15 style="position:absolute; left:762px; top:54px; width:60px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:68px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u15.png',sizingMethod='scale');
+"><img style="width:68px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u15.png" border="0" alt=""></span>
+
+</DIV>
+
+
+<DIV id=u17 style="position:absolute; left:60px; top:130px; width:560px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u17_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Thanks for your interest in SoccerKids!!! Please enter an email address, we will notify you when registration for our next season begins...</span></DIV></DIV>
+<DIV id=ou18 style="position:absolute; left:120px; top:180px; width:441px; height:331px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:449px; height:339px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u18.png',sizingMethod='scale');
+"><img style="width:449px; height:339px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u18.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u18container style="position:absolute; left:120px; top:180px; width:441px; height:331px;; overflow:visible">
+
+<DIV id=u19 style="position:absolute; left:2px; top:157px; width:436px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u18 src="Resources/transparent.gif" style="position:absolute; left:120px; top:180px; width:440px; height:330px"  >
+
+<span style="position:absolute; left:130px; top:190px; width:116px; height:100px">
+<IMG id=ou20 src="Members add email Id for notification_files/u20.jpg" style="position:absolute;left:0px;top:0px;width:116px;height:100px">
+</span>
+<IMG id=u20 src="Resources/transparent.gif" style="position:absolute; left:130px; top:190px; width:116px; height:100px"   >
+
+<DIV id=u21 style="position:absolute; left:182px; top:304px; width:168px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Add Email notification</b></span></DIV></DIV>
+<DIV id=u22 style="position:absolute; left:239px; top:417px; width:78px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>   <%= f.label :notifi %></b></span><span style=" font-family:'Verdana'; color:#FF0000; font-size:11pt;">*</span></DIV></DIV>
+<div style="position:absolute; left:319px; top:414px; width:221px; height:25px; ; ; text-align: left ; font-family:'Verdana'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :notifi %></div>
+
+<DIV id=u23ann style="font-size:1px; position:absolute; left:531px; top:410px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u24 style="visibility:hidden; position:absolute; left:262px; top:367px; width:214px; height:33px;; overflow:hidden">
+<DIV id=pd0u24 style="position:absolute; left:0px; top:0px; width:1px; height:1px; visibility:hidden;">
+<DIV id=ou25 style="position:absolute; left:3px; top:2px; width:208px; height:28px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:216px; height:36px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u25.png',sizingMethod='scale');
+"><img style="width:216px; height:36px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u25.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u25container style="position:absolute; left:3px; top:2px; width:208px; height:28px;; overflow:visible">
+
+<DIV id=u26 style="position:absolute; left:2px; top:7px; width:203px; height:13px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u26_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">Please enter valid Email-Id</span></div></DIV></DIV>
+</DIV>
+<IMG id=u25 src="Resources/transparent.gif" style="position:absolute; left:3px; top:2px; width:207px; height:27px"  >
+
+</DIV>
+</DIV>
+<DIV id=ou27 style="position:absolute; left:451px; top:190px; width:70px; height:34px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:78px; height:42px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u27.png',sizingMethod='scale');
+"><img style="width:78px; height:42px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u27.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u27container style="position:absolute; left:451px; top:190px; width:70px; height:34px;; overflow:visible">
+
+<DIV id=u28 style="position:absolute; left:2px; top:8.5px; width:65px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u28_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;">Home</span></div></DIV></DIV>
+</DIV>
+<IMG id=u27 src="Resources/transparent.gif" style="position:absolute; left:451px; top:190px; width:69px; height:33px"  >
+
+<DIV id=u27ann style="font-size:1px; position:absolute; left:511px; top:186px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou29 style="position:absolute; left:286px; top:454px; width:81px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:89px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Members add email Id for notification_files/u29.png',sizingMethod='scale');
+"><img style="width:89px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Members add email Id for notification_files/u29.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u29container style="position:absolute; left:286px; top:454px; width:81px; height:26px;; overflow:visible">
+
+<DIV id=u30 style="position:absolute; left:2px; top:4.5px; width:76px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u30_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= f.submit %></span></div></DIV></DIV>
+</DIV>
+
+
+<DIV id=u29ann style="font-size:1px; position:absolute; left:357px; top:450px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u31 style="position:absolute; left:189px; top:329px; width:361px; height:26px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u31_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">By giving your Email address you will be notified by an email when registration begins for a program...</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Members add email Id for notification_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+<%end %>
+

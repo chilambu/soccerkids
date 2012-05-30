@@ -1,0 +1,7 @@
+class Email < ActionMailer::Base
+  #default :from => "from@example.com"
+  def send_email
+	mail(:from=>"sriman.kandeepan@gmail.com",:to=>"sriman@railsfactory.org",
+            :subject=>'Reset your Password')  
+  end
+end

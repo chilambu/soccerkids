@@ -1,0 +1,59 @@
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Firstname:</b>
+  <%= current_user.firstname %>
+</p>
+ 
+<p>
+  <b>Lastname:</b>
+  <%= current_user.lastname %>
+</p>
+
+<p>
+  <b>Addressline1:</b>
+  <%= current_user.addressline1 %>
+</p>
+
+<p>
+  <b>Addressline2:</b>
+  <%= current_user.addressline2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= current_user.city %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= current_user.zip %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= current_user.state %>
+</p>
+
+<p>
+  <b>Home phone:</b>
+  <%= current_user.home_phone %>
+</p>
+
+<p>
+  <b>Alternate phone:</b>
+  <%= current_user.alternate_phone %>
+</p>
+
+<p>
+  <b>Alternate email:</b>
+  <%= current_user.alternate_email %>
+</p> 
+
+
+<%= link_to 'Edit', home_editparent_path(current_user) %>
+<%= link_to 'Back', '/programs' %>
+

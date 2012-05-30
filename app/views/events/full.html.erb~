@@ -1,0 +1,153 @@
+
+
+<%= render :partial => "layouts/first" %>
+<DIV id=ou3 style="position:absolute; left:504px; top:55px; width:96px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:104px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u3.png',sizingMethod='scale');
+"><img style="width:104px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u3.png" border="0" alt=""></span>
+
+</DIV>
+
+
+<DIV id=ou5 style="position:absolute; left:593px; top:55px; width:79px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:87px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u5.png',sizingMethod='scale');
+"><img style="width:87px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u5.png" border="0" alt=""></span>
+
+</DIV>
+
+
+<DIV id=ou7 style="position:absolute; left:0px; top:54px; width:51px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:59px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u7.png',sizingMethod='scale');
+"><img style="width:59px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u7.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u7ann style="font-size:1px; position:absolute; left:41px; top:50px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou9 style="position:absolute; left:50px; top:54px; width:61px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:69px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u9.png',sizingMethod='scale');
+"><img style="width:69px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u9.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u9ann style="font-size:1px; position:absolute; left:101px; top:50px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou11 style="position:absolute; left:227px; top:55px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u11.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u11.png" border="0" alt=""></span>
+
+</DIV>
+
+
+
+<DIV id=ou13 style="position:absolute; left:110px; top:55px; width:121px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:129px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u13.png',sizingMethod='scale');
+"><img style="width:129px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u13.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=ou15 style="position:absolute; left:762px; top:54px; width:60px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:68px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u15.png',sizingMethod='scale');
+"><img style="width:68px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u15.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u17 style="position:absolute; left:70px; top:122px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u17_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Program Details</b></span></DIV></DIV>
+<DIV id=ou18 style="position:absolute; left:100px; top:150px; width:511px; height:261px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:519px; height:269px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u18.png',sizingMethod='scale');
+"><img style="width:519px; height:269px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u18.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u18container style="position:absolute; left:100px; top:150px; width:511px; height:261px;; overflow:visible">
+
+<DIV id=u19 style="position:absolute; left:2px; top:122px; width:506px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u18 src="Resources/transparent.gif" style="position:absolute; left:100px; top:150px; width:510px; height:260px"  >
+
+<DIV id=u20 style="position:absolute; left:144px; top:180px; width:117px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u20_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program name:</span></DIV></DIV>
+<DIV id=u21 style="position:absolute; left:107px; top:221px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program description: </span></DIV></DIV>
+<DIV id=u22 style="position:absolute; left:130px; top:296px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program location:</span></DIV></DIV>
+<DIV id=u23 style="position:absolute; left:260px; top:296px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">  <%= @event.name %></span></DIV></DIV>
+<DIV id=u24 style="position:absolute; left:254px; top:180px; width:320px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u24_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= @event.name %></span></DIV></DIV>
+<DIV id=u25 style="position:absolute; left:260px; top:217px; width:340px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u25_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">This class taught by Coach  <%= @event.coach %> Tuition is <%= @event.tuition %> for  <%= @event.dates %>class meetings.</span></DIV></DIV>
+<DIV id=u26 style="position:absolute; left:169px; top:260px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u26_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Class Time:</span></DIV></DIV>
+<DIV id=u27 style="position:absolute; left:260px; top:260px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u27_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><%= @event.from_time %> </span></DIV></DIV>
+<DIV id=u28 style="position:absolute; left:196px; top:331px; width:59px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u28_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Status:</span></DIV></DIV>
+<DIV id=u29 style="position:absolute; left:260px; top:331px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u29_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">  <%= @event.status %></span></DIV></DIV>
+<DIV id=ou30 style="position:absolute; left:326px; top:291px; width:81px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:89px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u30.png',sizingMethod='scale');
+"><img style="width:89px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u30.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u30container style="position:absolute; left:326px; top:291px; width:81px; height:26px;; overflow:visible">
+
+<DIV id=u31 style="position:absolute; left:2px; top:4.5px; width:76px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u31_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">View map</span></div></DIV></DIV>
+</DIV>
+<IMG id=u30 src="Resources/transparent.gif" style="position:absolute; left:326px; top:291px; width:80px; height:25px"  >
+
+<DIV id=u30ann style="font-size:1px; position:absolute; left:397px; top:287px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou32 style="position:absolute; left:86px; top:417px; width:221px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:229px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u32.png',sizingMethod='scale');
+"><img style="width:229px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Program details page_files/u32.png" border="0" alt=""></span>
+
+
+<DIV id=u32container style="position:absolute; left:86px; top:417px; width:221px; height:26px;; overflow:visible">
+
+<DIV id=u33 style="position:absolute; left:2px; top:4.5px; width:216px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u33_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><u></u> </span><span style=" font-family:'Verdana'; color:#808080; font-size:9pt;"></span></div></DIV></DIV>
+</DIV>
+<IMG id=u32 src="Resources/transparent.gif" style="position:absolute; left:86px; top:417px; width:220px; height:25px"  >
+
+<DIV id=u32ann style="font-size:1px; position:absolute; left:297px; top:413px; width:1px; height:1px; overflow:visible"></DIV>
+
+<INPUT id=u34  type=submit value="Register for program" style="position:absolute; left:460px; top:377px; width:140px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u35 style="position:absolute; left:195px; top:362px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Tuition:</span></DIV></DIV>
+<DIV id=u36 style="position:absolute; left:260px; top:364px; width:40px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">$155 </span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Program details page_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+

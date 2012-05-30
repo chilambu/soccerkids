@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  from_time: 2012-05-19 00:26:05
+  to_time: 2012-05-19 00:26:05
+  age: 1
+  status: MyString
+  dates: 2012-05-19
+  coach: MyString
+  tuition: MyString
+
+two:
+  name: MyString
+  from_time: 2012-05-19 00:26:05
+  to_time: 2012-05-19 00:26:05
+  age: 1
+  status: MyString
+  dates: 2012-05-19
+  coach: MyString
+  tuition: MyString
