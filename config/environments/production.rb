@@ -30,6 +30,7 @@ Soccerk::Application.configure do
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
   config.serve_static_assets = false
+  config.action_mailer.default_url_options = { :host => 'soccerkidsrails.heroku.com' }
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
@@ -39,7 +40,14 @@ Soccerk::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
-
+ActionMailer::Base.smtp_settings = {
+:address => "smtp.gmail.com",
+:enable_starttls_auto => true,
+:port => 587,
+:authentication => :plain,
+:user_name => "chilambarasan.p@gmail.com",
+:password => '123karikalan'
+}
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)
   config.i18n.fallbacks = true
