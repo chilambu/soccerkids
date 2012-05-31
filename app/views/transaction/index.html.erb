@@ -2,29 +2,32 @@
 
 <table >
   <tr>
-    <th>First name</th>
-    <th>Middle name</th>
-    <th>Last name</th>
-    <th>Gender</th>
-    <th>Dob</th>
-    <th>User</th>
-    <th>School name</th>
-    <th>Registrant info</th>
-    <th></th>
-    <th></th>
+    <th> name</th>
+    <th>adress</th>
+    <th>city</th>
+    <th>state</th>
+    <th>zip</th>
+    <th>user_id</th>
+    <th>card_type</th>
+    <th>card_number</th>
+    <th>card_date</th>
+    <th>player_id</th>
     <th></th>
   </tr>
 
 <% @transaction.each do |transaction| %>
   <tr>
-    <td><%= transaction.first_name %></td>
-    <td><%= transaction.middle_name %></td>
-    <td><%= transaction.last_name %></td>
-    <td><%= transaction.gender %></td>
-    <td><%= transaction.dob %></td>
+    <td><%= transaction.name %></td>
+    <td><%= transaction.adress %></td>
+    <td><%= transaction.city %></td>
+    <td><%= transaction.state %></td>
+    <td><%= transaction.zip %></td>
     <td><%= transaction.user_id %></td>
-    <td><%= transaction.school_name %></td>
-    <td><%= transaction.registrant_info %></td>
+    <td><%= transaction.card_type %></td>
+    <td><%= transaction.card_number %></td>
+    <td><%= transaction.card_date %></td>
+    <td><%= transaction.card_verification %></td>
+    <td><%= transaction.player_id %></td>
     <td><%= link_to 'Show', transaction %></td>
     <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
     <td><%= link_to 'Destroy', transaction, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -1,28 +1,5 @@
-<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
-<script type="text/javascript">
-function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
-var s = "";
-s = s + "function " + fname + "() { ";
-s = s + "document.getElementById(submenucontainerid).style.visibility='';";
-s = s + "BringToFront(submenucontainerid);";
-s = s + "}";
-if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
-s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
-else
-s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
-s = s + "document.getElementById(tablecellroid).onclick = function() {";
-s = s + "if( document.createEvent ) {";
-s = s + "var evObj = document.createEvent('MouseEvents');";
-s = s + "evObj.initEvent( 'click', true, false );";
-s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
-s = s + "} else if( document.createEventObject ) {";
-s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
-s = s + "}";
-s = s + "}";
-eval(s);
-}
 
-</script>
+<%= render :partial => "layouts/first" %>
 <%= form_for(@player) do |f| %>
   <% if @player.errors.any? %>
     <div id="error_explanation">
@@ -82,7 +59,77 @@ src="images/Contact info_files/Registration page_files/u4.png" border="0" alt=""
 
 <DIV id=u6 style="position:absolute; left:211px; top:156px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Enter Player's Information</b></span></DIV></DIV>
+<SELECT id=u7  style="position:absolute; left:433px; top:453px; width:80px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="-- Day --">-- Day --</OPTION>
+<OPTION  value="1">1</OPTION>
+<OPTION  value="2">2</OPTION>
+<OPTION  value="3">3</OPTION>
+<OPTION  value="4">4</OPTION>
+<OPTION  value="5">5</OPTION>
+<OPTION  value="6">6</OPTION>
+<OPTION  value="7">7</OPTION>
+<OPTION  value="8">8</OPTION>
+<OPTION  value="9">9</OPTION>
+<OPTION  value="10">10</OPTION>
+<OPTION  value="11">11</OPTION>
+<OPTION  value="12">12</OPTION>
+<OPTION  value="13">13</OPTION>
+<OPTION  value="14">14</OPTION>
+<OPTION  value="15">15</OPTION>
+<OPTION  value="16">16</OPTION>
+<OPTION  value="17">17</OPTION>
+<OPTION  value="18">18</OPTION>
+<OPTION  value="19">19</OPTION>
+<OPTION  value="20">20</OPTION>
+<OPTION  value="21">21</OPTION>
+<OPTION  value="22">22</OPTION>
+<OPTION  value="23">23</OPTION>
+<OPTION  value="24">24</OPTION>
+<OPTION  value="25">25</OPTION>
+<OPTION  value="26">26</OPTION>
+<OPTION  value="27">27</OPTION>
+<OPTION  value="28">28</OPTION>
+<OPTION  value="29">29</OPTION>
+<OPTION  value="30">30</OPTION>
+<OPTION  value="31">31</OPTION>
+</SELECT>
 
+<SELECT id=u8  style="position:absolute; left:343px; top:453px; width:87px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="-- Month --">-- Month --</OPTION>
+<OPTION  value="January">January</OPTION>
+<OPTION  value="Feburary">Feburary</OPTION>
+<OPTION  value="March">March</OPTION>
+<OPTION  value="April">April</OPTION>
+<OPTION  value="May">May</OPTION>
+<OPTION  value="June">June</OPTION>
+<OPTION  value="July">July</OPTION>
+<OPTION  value="August">August</OPTION>
+<OPTION  value="September">September</OPTION>
+<OPTION  value="October">October</OPTION>
+<OPTION  value="November">November</OPTION>
+<OPTION  value="December">December</OPTION>
+</SELECT>
+
+<SELECT id=u9  style="position:absolute; left:515px; top:453px; width:84px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="-- Year --">-- Year --</OPTION>
+<OPTION  value="1995">1995</OPTION>
+<OPTION  value="1996">1996</OPTION>
+<OPTION  value="1996">1982</OPTION>
+<OPTION  value="1997">1997</OPTION>
+<OPTION  value="1999">1998</OPTION>
+<OPTION  value="2000">2000</OPTION>
+<OPTION  value="2001">2001</OPTION>
+<OPTION  value="2002">2002</OPTION>
+<OPTION  value="2003">2003</OPTION>
+<OPTION  value="2004">2004</OPTION>
+<OPTION  value="2005">2005</OPTION>
+<OPTION  value="2006">2006</OPTION>
+<OPTION  value="2007">2007</OPTION>
+<OPTION  value="2008">2008</OPTION>
+<OPTION  value="2009">2009</OPTION>
+
+
+</SELECT>
 
 <DIV id=u10 style="position:absolute; left:246px; top:456px; width:92px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Date of birth</span><span style=" font-family:'Verdana'; color:#FF0000; font-size:11pt;">*</span></DIV></DIV>
@@ -110,10 +157,10 @@ src="images/Contact info_files/Registration page_files/u16.png" border="0" alt="
  <%= f.hidden_field :user_id, :value => current_user.id %> 
 
   <div class="field">
-    <%= f.label :gender %><br />
-       <%#= f.label :male %>&nbsp;<%= f.label :female %><br />
-       <%= f.radio_button :gender, true %> <%= f.label :gender, "Yes" %>
-<%= f.radio_button :gender, false %> <%= f.label :gender, "No" %>
+    <%#= f.label :gender %><br />
+       <%#= f.label :male %>&nbsp;<%#= f.label :female %><br />
+       <%#= f.radio_button :gender, true %> <%#= f.label :gender, "Yes" %>
+<%#= f.radio_button :gender, false %> <%#= f.label :gender, "No" %>
   </div>
   
   
@@ -129,7 +176,7 @@ src="images/Contact info_files/Registration page_files/u16.png" border="0" alt="
     });
     </script>
        
-    <%= f.datepicker :dob, :id=>"datepicker" %>
+    <%#= f.datepicker :dob, :id=>"datepicker" %>
     </span>
 
 
@@ -138,14 +185,16 @@ src="images/Contact info_files/Registration page_files/u16.png" border="0" alt="
 
 
 
-
 <DIV id=u16container style="position:absolute; left:590px; top:705px; width:142px; height:26px;; overflow:visible">
 
 <DIV id=u17 style="position:absolute; left:2px; top:4.5px; width:137px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u17_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= f.submit %></span></div></DIV></DIV>
+<DIV id=u17_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= f.submit %><% button_to "add player" , '/player/addplayer'%></span></div></DIV></DIV>
 </DIV>
 
 
+
+
+<%#= link_to "Label", :controller => :player, :action => :addplayer %>
 <DIV id=u16ann style="font-size:1px; position:absolute; left:722px; top:701px; width:1px; height:1px; overflow:visible"></DIV>
 
 <span style="position:absolute; left:190px; top:157px; width:14px; height:14px">
@@ -380,6 +429,5 @@ src="images/Contact info_files/Registration page_files/u67.png" border="0" alt="
 
 <DIV id=u68 style="position:absolute; left:263px; top:549px; width:60px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u68_rtf><span style=" font-family:'Verdana'; color:#C0C0C0; font-size:8pt;">(optional)</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
-<SCRIPT src="images/Contact info_files/Registration page_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
-<% end %>
 
+<% end %>

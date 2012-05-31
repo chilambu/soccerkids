@@ -69,5 +69,7 @@ def editparent1
 	@user=User.find_by_id(current_user.id)
 	@user.update_attributes(params[:user])
 	redirect_to '/programs'
+end
+def thanks
 	end
 end

@@ -13,6 +13,8 @@ Soccerk::Application.routes.draw do
 match 'home/editparent1'=> 'home#editparent1'
 match 'home/editparent'=> 'home#editparent'
 match 'home/showp'=> 'home#showp'
+match 'home/thanks'=> 'home#thanks'
+
   resources :players
 match 'playe'=>'players#new'
   root :to => 'home#homepage'
@@ -20,6 +22,7 @@ match 'payments/hi'=> 'payments#hi'
 match 'use/pd'=>'use#pd'
 match 'events/full/:id/:player_id'=> 'events#full'
 
+#match 'player/addplayer'=> 'player#addplayer'
 
    devise_for :users, :controllers => {:registrations => "registrations"}
 #~ devise_for :user do

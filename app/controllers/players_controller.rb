@@ -2,10 +2,9 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.xml
   
-  
   def index
  @players =Player.find_all_by_user_id(current_user.id)
- #@players = Player.all
+#@players = Player.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -39,7 +38,6 @@ class PlayersController < ApplicationController
   def edit
     @player = Player.find(params[:id])
   end
-
   # POST /players
   # POST /players.xml
   def create
@@ -57,7 +55,6 @@ class PlayersController < ApplicationController
       end
     end
   end
-
   # PUT /players/1
   # PUT /players/1.xml
   def update
@@ -73,7 +70,21 @@ class PlayersController < ApplicationController
       end
     end
   end
+def addplayer
+	  puts params
+    @player = Player.new(params[:player])
 
+    respond_to do |format|
+      if @player.save
+        #format.html { render :text =>"success" }
+        format.html { redirect_to player_new_path }
+        format.xml  { render :xml => @player, :status => :created, :location => @player }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @player.errors, :status => :unprocessable_entity }
+      end
+    end
+	end
   # DELETE /players/1
   # DELETE /players/1.xml
   def destroy

@@ -44,8 +44,8 @@ credit_card = ActiveMerchant::Billing::CreditCard.new(
     :signature => "AiPC9BjkCyDFQXbSkoZcgqH3hpacAFxPwudk.Im4wr8hZApTZwekIFFz"
   )
   
-  # Authorize for $10 dollars (1000 cents)
-  response = gateway.authorize(1000, credit_card, :ip => "127.0.0.1")
+  # Authorize for $150 dollars (1000 cents)
+  response = gateway.authorize(15000, credit_card, :ip => "127.0.0.1")
   
    #~ gateway = ActiveMerchant::Billing::PaypalGateway.new(
         #~ :login => "bharan_1337931714_biz_api1.gmail.com",
@@ -92,9 +92,12 @@ credit_card = ActiveMerchant::Billing::CreditCard.new(
     #~ @schedule.save
     #~ @mycart.destroy
     flash[:notice] = "Thank you, Transaction is sucessfully completed"
-    redirect_to '/'
+    redirect_to '/home/thanks'
+     @transaction.save
    else
     puts "Error: #{response.message}"
+      flash[:notice] = "invalid"
+            redirect_to '/home/thanks'
  end
   #~ else
     #~ puts "Error: credit card is not valid. #{credit_card.errors.full_messages.join('. ')}"

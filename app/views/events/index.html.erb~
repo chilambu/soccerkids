@@ -1,0 +1,39 @@
+
+<%= render :partial => "layouts/first" %>
+<DIV id=u15 style="position:absolute; left:125px; top:150px; width:650px; height:25px;text-align: left ; font-family:Arial; text-align:left;" >
+<table border="5">
+
+  <tr>
+    <th>Name</th>
+    <th>From time</th>
+    <th>To time</th>
+    <th>Age</th>
+    <th>Status</th>
+    <th>Dates</th>
+    <th>Coach</th>
+    <th>Tuition</th>
+  
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.from_time %></td>
+    <td><%= event.to_time %></td>
+    <td><%= event.age %></td>
+    <td><%= event.status %></td>
+    <td><%= event.dates %></td>
+    <td><%= event.coach %></td>
+    <td><%= event.tuition %></td>
+   <%#= link_to 'Show', event %>
+<%#= link_to 'Edit', edit_event_path(event) %>
+    <%#= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %>
+       <td><%= link_to 'Register', event %></td>  
+  </tr>
+<% end %>
+</table>
+</DIV>
+<br />
+
+<%= link_to 'New Event', new_event_path %>

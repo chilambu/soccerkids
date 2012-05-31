@@ -4,7 +4,7 @@
 
 
 <DIV id=u17 style="position:absolute; left:70px; top:122px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u17_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Program Details</b></span></DIV></DIV>
+<DIV id=u17_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;"><b>Program Details</b></span></DIV></DIV>
 <DIV id=ou18 style="position:absolute; left:100px; top:150px; width:511px; height:261px;; overflow:visible">
 </DIV>
 <DIV id=u18container style="position:absolute; left:100px; top:150px; width:511px; height:261px;; overflow:visible">
@@ -38,26 +38,18 @@
 
 
 </DIV>
-<DIV id=u30container style="position:absolute; left:226px; top:391px; width:81px; height:26px;; overflow:visible">
-<h2>Listing players</h2>
+<DIV id=u30container style="position:absolute; left:226px; top:391px; width:150px; height:1px;; overflow:visible">
+<h3>Listing&nbsp;players</h3>
 
-<table>
+<table border="5">
   <tr>
-    <th>First name</th>
-
-  
-  </tr>
-
+    <th>First&nbsp;name</th>
+</tr>
 <% @players.each do |player| %>
   <tr>
-
-       <td><%#= link_to player.first_name, "/events/full/#{@event.id}",[@player.id]%>
-                <%#= link_to  player.first_name, like_path(answer), :add_param=>2 , :remote=>"true" ,:method=>:post %>
-    <td>registerfor&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to player.first_name, "/events/full/#{@event.id}/#{player.id}"%></td>
-    <td><%= player.id %></td>
- 
-    
-  </tr>
+<td>registerfor&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to player.first_name, "/events/full/#{@event.id}/#{player.id}"%></td>
+<td><%= player.id %></td>
+</tr>
 <% end %>
 </table>
 
@@ -65,31 +57,7 @@
 
 
 </DIV>
-<DIV id=u30container style="position:absolute; left:326px; top:291px; width:81px; height:26px;; overflow:visible">
 
-<DIV id=u31 style="position:absolute; left:2px; top:4.5px; width:76px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u31_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">View map</span></div></DIV></DIV>
-</DIV>
-<IMG id=u30 src="Resources/transparent.gif" style="position:absolute; left:326px; top:291px; width:80px; height:25px"  >
-
-<DIV id=u30ann style="font-size:1px; position:absolute; left:397px; top:287px; width:1px; height:1px; overflow:visible"></DIV>
-
-<DIV id=ou32 style="position:absolute; left:86px; top:417px; width:221px; height:26px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:229px; height:34px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Program details page_files/u32.png',sizingMethod='scale');
-"><img style="width:229px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Program details page_files/u32.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u32container style="position:absolute; left:86px; top:417px; width:221px; height:26px;; overflow:visible">
-
-<DIV id=u33 style="position:absolute; left:2px; top:4.5px; width:216px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u33_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><u></u> </span><span style=" font-family:'Verdana'; color:#808080; font-size:9pt;"></span></div></DIV></DIV>
-</DIV>
-<IMG id=u32 src="Resources/transparent.gif" style="position:absolute; left:86px; top:417px; width:220px; height:25px"  >
-
-<DIV id=u32ann style="font-size:40px; position:absolute; left:300px; top:413px; width:100px; height:100px; overflow:visible"></DIV>
 
 <INPUT id=u34  type=submit value="Register for program" style="position:absolute; left:460px; top:377px; width:140px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 

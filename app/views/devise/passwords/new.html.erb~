@@ -1,0 +1,48 @@
+
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+<%= render :partial => "layouts/first" %>
+<IMG id=u2 src="Resources/transparent.gif" style="position:absolute; left:510px; top:173px; width:179px; height:35px"  >
+
+<DIV id=u2ann style="font-size:1px; position:absolute; left:680px; top:169px; width:1px; height:1px; overflow:visible"></DIV>
+
+<span style="position:absolute; left:191px; top:168px; width:116px; height:100px">
+<IMG id=ou4 src="/images/u4.jpg" style="position:absolute;left:0px;top:0px;width:116px;height:100px">
+</span>
+<IMG id=u4 src="Resources/transparent.gif" style="position:absolute; left:191px; top:168px; width:116px; height:100px"   >
+
+<DIV id=u5 style="position:absolute; left:221px; top:282px; width:225px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u5_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:12pt;"><b>Forgot your password?</b></span></DIV></DIV>
+<div style="position:absolute; left:409px; top:399px; width:206px; height:35px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+<%= f.email_field :email %></div>
+</div>
+<DIV id=u7 style="position:absolute; left:257px; top:408px; width:150px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><%= f.label :youremail_address %></span></DIV></DIV>
+<DIV id=ou8 style="position:absolute; left:307px; top:452px; width:161px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:169px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/u8.png',sizingMethod='scale');
+"></span>
+
+</DIV>
+<DIV id=u8container style="position:absolute; left:307px; top:452px; width:161px; height:26px;; overflow:visible">
+
+<DIV id=u9 style="position:absolute; left:2px; top:4.5px; width:156px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u9_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><%= f.submit "Send me reset password instructions" %></span></div></DIV></DIV>
+</DIV>
+
+<DIV id=u8ann style="font-size:1px; position:absolute; left:458px; top:448px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u10 style="position:absolute; left:208px; top:314px; width:512px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">If you forgot your password, please enter the email associated with your SoccerKids</span></DIV></DIV>
+<DIV id=u11 style="position:absolute; left:209px; top:331px; width:471px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u11_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">account. Click &quot;Get My Password&quot; and an email will be sent with a new password.</span></DIV></DIV>
+
+
+
+
+
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="/images/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+<% end %>

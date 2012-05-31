@@ -1,53 +1,84 @@
 
+<script src="/javascripts/livevalidation_standalone.js"></script>
+
+
 <%= render :partial => "layouts/first" %>
-<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;">
-<u><b><div style="position:absolute; left:100px; top:150px; width:600px; height:7px; ; ;text-align:center">
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">
+<u><b><div style="position:absolute; left:100px; top:130px; width:600px; height:7px; ; ;text-align:center">
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :firstname %><br />
-  <%= f.text_field :firstname %></div>
+  <div><%= f.label :firstname %>
+  <%= f.text_field :firstname %></div><br />
 
 
-  <div><%= f.label :lastname %><br />
-  <%= f.text_field :lastname %></div>
+  <div><%= f.label :lastname %>
+  <%= f.text_field :lastname %></div><br />
 
 
-  <div><%= f.label :AddressLine1 %><br />
-  <%= f.text_field :addressline1 %></div>
+  <div><%= f.label :AddressLine1 %>
+  <%= f.text_field :addressline1 %></div><br />
 
- <div><%= f.label :AddressLine2 %><br />
-  <%= f.text_field :addressline2 %></div>
-
-
-  <div><%= f.label :city %><br />
-  <%= f.text_field :city %></div>
-
-  <div><%= f.label :zip %><br />
-  <%= f.text_field :zip %></div>
-
-  <div><%= f.label :state %><br />
-  <%= f.text_field :state %></div>
-
-  <div><%= f.label :homephone %><br />
-  <%= f.text_field :home_phone %></div>
+ <div><%= f.label :AddressLine2 %>
+  <%= f.text_field :addressline2 %></div><br />
 
 
-  <div><%= f.label :alternatephone %><br />
-  <%= f.text_field :alternate_phone %></div>
+  <div><%= f.label :city %>
+  <%= f.text_field :city %></div><br />
 
-  <div><%= f.label :alternateemail %><br />
-  <%= f.text_field :alternate_email %></div>
+  <div><%= f.label :zip %>
+  <%= f.text_field :zip %></div><br />
 
-<div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></div>
+  <div><%= f.label :state %>
+  <%= f.text_field :state %></div><br />
+
+  <div><%= f.label :homephone %>
+  <%= f.text_field :home_phone %></div><br />
+
+
+  <div><%= f.label :alternatephone %>
+  <%= f.text_field :alternate_phone %></div><br />
+
+  <div><%= f.label :alternateemail %>
+  <%= f.text_field :alternate_email %></div><br />
+
+<div><%= f.label :current_password %> 
+  <%= f.password_field :current_password %></div><br />
 
 
 
-  <div><%= f.submit "continue" %></div>
+  <div><%= f.submit "continue" %></div> 
 <% end %>
+<script>
+var f1 = new LiveValidation('user_firstname');
+f1.add( Validate.Presence ); </script>
+<script>
+var f2 = new LiveValidation('user_lastname');
+f2.add( Validate.Presence );</script>
+<script>
+var f3 = new LiveValidation('user_addressline1');
+f3.add( Validate.Presence );</script>
+<script>
+var f4 = new LiveValidation('user_addressline2');
+f4.add( Validate.Presence );</script>
+<script>
+var f5= new LiveValidation('user_city');
+f5.add( Validate.Presence );</script>
+<script>
+var f6 = new LiveValidation('user_zip');
+f6.add( Validate.Presence );</script>
+<script>
+var f7= new LiveValidation('user_state');
+f7.add( Validate.Presence );</script>
+<script>
+var f8 = new LiveValidation('user_home_phone');
+f8.add( Validate.Presence );</script>
+<script>
+var f9 = new LiveValidation('user_alternate_phone');
+f9.add( Validate.Presence );</script>
+<script>
+var f10 = new LiveValidation('user_alternate_email');
+f10.add( Validate.Presence );
 
-
-
-<%= link_to "Back", :back %>
+</script>
