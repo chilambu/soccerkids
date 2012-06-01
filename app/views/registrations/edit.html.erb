@@ -1,19 +1,17 @@
+<%= render :partial => "layouts/first" %>
 
 <script src="/javascripts/livevalidation_standalone.js"></script>
-
-
-<%= render :partial => "layouts/first" %>
-<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">
-<u><b><div style="position:absolute; left:100px; top:130px; width:600px; height:7px; ; ;text-align:center">
-
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-  <%= devise_error_messages! %>
 <style>
-
-   
      input[type=text] { float: right; width: 250px; }
      input[type=password] { float: right; width: 250px;}
 </style>
+
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">
+<u><b><div style="position:absolute; left:100px; top:130px; width:600px; height:7px; ; ;text-align:center">
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+
   <div><%= f.label :firstname %>
   <%= f.text_field :firstname %></div><br />
 
@@ -50,7 +48,6 @@
 
 <div><%= f.label :current_password %> 
   <%= f.password_field :current_password %></div><br />
-
 
 
   <div><%= f.submit "continue" %></div> 

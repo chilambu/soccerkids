@@ -71,5 +71,7 @@ def editparent1
 	redirect_to '/programs'
 end
 def thanks
+end
+def sorry
 	end
 end

@@ -14,6 +14,8 @@ match 'home/editparent1'=> 'home#editparent1'
 match 'home/editparent'=> 'home#editparent'
 match 'home/showp'=> 'home#showp'
 match 'home/thanks'=> 'home#thanks'
+match 'home/sorry'=> 'home#sorry'
+
 
   resources :players
 match 'playe'=>'players#new'

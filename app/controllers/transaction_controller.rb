@@ -19,14 +19,30 @@ class TransactionController < ApplicationController
    ActiveMerchant::Billing::Base.mode = :test
    
    # Create a new credit card object
+#~ credit_card = ActiveMerchant::Billing::CreditCard.new(
+  #~ :number     => '4785636150538332',
+  #~ :month      => '8',
+  #~ :year       => '2019',
+  #~ :first_name => 'Tobias',
+  #~ :last_name  => 'Luetke',
+  #~ :verification_value  => '123'
+#~ )
+
 credit_card = ActiveMerchant::Billing::CreditCard.new(
-  :number     => '4785636150538332',
+ :number     => "#{params[:transaction][:card_number]}",
   :month      => '8',
+  #:month      => "#{params[:transaction][:month]}",
   :year       => '2019',
-  :first_name => 'Tobias',
-  :last_name  => 'Luetke',
-  :verification_value  => '123'
-)
+  #:year       => "#{params[:transaction][:year]}",
+  
+   :first_name => "#{params[:transaction][:name]}",
+   
+   :last_name  => 'Luetke',
+
+   :verification_value  =>"#{params[:transaction][:card_verification]}"
+   
+ )
+
 
   #if credit_card.valid?
   #~ response = gateway.purchase(@amount.to_i,credit_card,:ip => "127.0.0.1", :billing_address => {
@@ -94,11 +110,12 @@ credit_card = ActiveMerchant::Billing::CreditCard.new(
     flash[:notice] = "Thank you, Transaction is sucessfully completed"
     redirect_to '/home/thanks'
      @transaction.save
+     end
    else
-    puts "Error: #{response.message}"
+ #puts "Error: #{response.message}"
       flash[:notice] = "invalid"
-            redirect_to '/home/thanks'
- end
+            redirect_to '/home/sorry'
+
   #~ else
     #~ puts "Error: credit card is not valid. #{credit_card.errors.full_messages.join('. ')}"
   end
