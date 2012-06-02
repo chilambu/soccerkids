@@ -57,6 +57,7 @@ class PlayersController < ApplicationController
   end
   # PUT /players/1
   # PUT /players/1.xml
+
   def update
     @player = Player.find(params[:id])
 

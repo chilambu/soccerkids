@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120530053642) do
+ActiveRecord::Schema.define(:version => 20120602073945) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -25,6 +25,29 @@ ActiveRecord::Schema.define(:version => 20120530053642) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "player_id"
+  end
+
+  create_table "order_transactions", :force => true do |t|
+    t.integer  "order_id"
+    t.string   "action"
+    t.integer  "amount"
+    t.boolean  "success"
+    t.string   "authorization"
+    t.string   "message"
+    t.text     "params"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", :force => true do |t|
+    t.integer  "cart_id"
+    t.string   "ip_address"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "card_type"
+    t.date     "card_expires_on"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "parents", :force => true do |t|
@@ -54,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20120530053642) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "transaction_id"
   end
 
   create_table "programs", :force => true do |t|
@@ -77,7 +101,7 @@ ActiveRecord::Schema.define(:version => 20120530053642) do
 
   create_table "transactions", :force => true do |t|
     t.string   "card_type"
-    t.integer  "card_number"
+    t.integer  "card_number",       :limit => 8
     t.date     "card_date"
     t.string   "card_verification"
     t.integer  "user_id"

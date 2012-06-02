@@ -41,7 +41,7 @@ case type
 when  "reg"
 page="/users/edit"
 when "payment"
-page= "/payments/hi"
+page= "/programs"
 when "per_info"
 page= "/home/editparent"
 when "notify"

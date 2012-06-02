@@ -15,6 +15,8 @@ match 'home/editparent'=> 'home#editparent'
 match 'home/showp'=> 'home#showp'
 match 'home/thanks'=> 'home#thanks'
 match 'home/sorry'=> 'home#sorry'
+match 'players/addplayer'=> 'players#addplayer'
+
 
 
   resources :players
@@ -23,6 +25,7 @@ match 'playe'=>'players#new'
 match 'payments/hi'=> 'payments#hi'
 match 'use/pd'=>'use#pd'
 match 'events/full/:id/:player_id'=> 'events#full'
+match 'transaction/new/:id/:player_id'=> 'transaction#new'
 
 #match 'player/addplayer'=> 'player#addplayer'
 

@@ -38,10 +38,11 @@
 
 
 </DIV>
-<DIV id=u30container style="position:absolute; left:226px; top:391px; width:81px; height:26px;; overflow:visible">
-<h3>Listing&nbsp;players</h3>
+<DIV id=u30container style="position:absolute; left:226px; top:391px; width:150px; height:1px;; overflow:visible">
+<h3>Listing&nbsp;your&nbsp;players</h3>
 
-<table>
+
+<table border="5">
   <tr>
     <th>First&nbsp;name</th>
 </tr>
@@ -59,7 +60,7 @@
 </DIV>
 
 
-<INPUT id=u34  type=submit value="Register for program" style="position:absolute; left:460px; top:377px; width:140px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
 
 <DIV id=u35 style="position:absolute; left:195px; top:362px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Tuition:</span></DIV></DIV>

@@ -1,14 +1,14 @@
-<br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br><br>
+<%= render :partial => "layouts/first" %>
 <h3 align="center">Transaction</h3>
 <div align=center>
 <%= form_for :transaction ,:url=>{:action=>'create',:id=>params[:id]} do |f|%><br/>
 
-
+<%= f.hidden_field :user_id, :value => current_user.id %>
 Card Holder Name:
 <%=f.text_field:name %><br />
 <br />
-
+<%= f.hidden_field :player_id, :value => params[:player_id] %>
 
 Billing Address:
 <%=f.text_field:adress %><br />
