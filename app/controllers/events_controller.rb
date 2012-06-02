@@ -7,11 +7,15 @@ class EventsController < ApplicationController
       pl_ids << params[:pl]
     else
       @programlists = Programlist.find_all_by_program_id(params[:pg])
+      @events_data=[]
       @programlists.each do |pl|
         pl_ids << pl.id
+	   @result= Event.find_all_by_programlist_id( pl.id) 
+	   @events_data<<@result
       end
     end
-    @events = Event.find_all_by_programlist_id(pl_ids) 
+    @events=@events_data.flatten!
+ 
 puts 333333333333333333333333
 puts params[:pl].inspect
 puts pl_ids.inspect
