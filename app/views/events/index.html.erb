@@ -16,7 +16,7 @@ to select the event click on register link of corresponding
     <th></th>
   </tr>
 
-<% @events.each do |event| %>
+<% @events && @events.each do |event| %>
   <tr>
     <td><%= event.name %></td>
     <td><%= event.from_time %></td>
