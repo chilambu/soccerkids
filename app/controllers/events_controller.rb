@@ -10,7 +10,7 @@ class EventsController < ApplicationController
       @events_data=[]
       @programlists.each do |pl|
         pl_ids << pl.id
-	   @result= Event.find_all_by_programlist_id( pl.id) 
+	   @result= Event.find_all_by_programlist_id( pl.id.to_s) 
 	   @events_data<<@result
       end
     end
