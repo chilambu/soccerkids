@@ -1,5 +1,8 @@
 Soccerk::Application.routes.draw do
 
+  root :to => 'home#homepage'
+
+   devise_for :users, :controllers => {:registrations => "registrations"}
 
 
  resources :events
@@ -9,41 +12,38 @@ Soccerk::Application.routes.draw do
   resources :parents
 
   resources :programs
+  
   resources :program_list
+  
+  
 match 'home/editparent1'=> 'home#editparent1'
 match 'home/editparent'=> 'home#editparent'
 match 'home/showp'=> 'home#showp'
 match 'home/thanks'=> 'home#thanks'
 match 'home/sorry'=> 'home#sorry'
-match 'players/addplayer'=> 'players#addplayer'
-
+match 'home/alreadypaid'=> 'home#alreadypaid'
+  match 'home/redirect'=> 'home#redirect_page'
+   match 'home/AboutSoccerKids'=> 'home#aboutSoccerKids'
+    match 'home/help'=> 'home#help'
+   match 'home/soccerkidsonlinestore'=> 'home#soccerkidsonlinestore'
 
 
   resources :players
+  match 'players/addplayer'=> 'players#addplayer'
 match 'playe'=>'players#new'
-  root :to => 'home#homepage'
-match 'payments/hi'=> 'payments#hi'
+
 match 'use/pd'=>'use#pd'
 match 'events/full/:id/:player_id'=> 'events#full'
 match 'transaction/new/:id/:player_id'=> 'transaction#new'
 
-#match 'player/addplayer'=> 'player#addplayer'
 
-   devise_for :users, :controllers => {:registrations => "registrations"}
-#~ devise_for :user do
-   #~ get "/login", :to => "devise/sessions#new",:as=>"login" # Add a custom sign in route for user sign in
-   #~ get "/logout", :to => "devise/sessions#destroy" # Add a custom sing out route for user sign out
-   #~ get "/register", :to => "devise/registrations#new" # Add a Custom Route for Registrations
-#~ end
+
 
    match 'home/programs'=> 'home#programs'
    match 'program_list/create'=> "program_list#create", :as => "programlists"
    match 'pro'=> 'programs#new'
    match 'pro_list'=> 'programs#list'
-   match 'home/redirect'=> 'home#redirect_page'
-   match 'home/AboutSoccerKids'=> 'home#aboutSoccerKids'
-    match 'home/help'=> 'home#help'
-   match 'home/soccerkidsonlinestore'=> 'home#soccerkidsonlinestore'
+ 
    match 'use/notifi' =>'use#notifi'  
    match 'use/notifi1' =>'use#notifi1'
 

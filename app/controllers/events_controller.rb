@@ -18,19 +18,13 @@ class EventsController < ApplicationController
     end
     
  
-puts 333333333333333333333333
-puts params[:pl].inspect
-puts pl_ids.inspect
-puts @events.inspect
-puts 333333333333333333333333
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @events }
     end
   end
 
-  # GET /events/1
-  # GET /events/1.xml
+ 
   def show
 	@players = Player.find_all_by_user_id(current_user.id)
     @event = Event.find(params[:id])
@@ -42,8 +36,6 @@ puts 333333333333333333333333
 
 
 def full
-	#@players = Player.find_all_by_user_id(current_user.id)
-	#@event = Event.find_all_by_event_id(event.id)
 	@player = Player.find(params[:player_id])
 	@event = Event.find(params[:id])
 

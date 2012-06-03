@@ -5,9 +5,13 @@ class TransactionController < ApplicationController
  end
 
  def new
-   @transaction=Transaction.new
 	@player = Player.find(params[:player_id])
-	
+	unless @player.transaction_id
+   @transaction=Transaction.new
+	else
+	redirect_to '/home/alreadypaid'
+
+	end
  end
   
  def create
@@ -29,9 +33,7 @@ class TransactionController < ApplicationController
 	credit_card = ActiveMerchant::Billing::CreditCard.new(
 		:number     => "#{params[:transaction][:card_number]}",
 		:month      => '8',
-		#:month      => "#{params[:transaction][:month]}",
 		:year       => '2019',
-		#:year       => "#{params[:transaction][:year]}",	
 		:first_name => "#{params[:transaction][:name]}",	
 		:last_name  => 'Luetke',
 		:verification_value  =>"#{params[:transaction][:card_verification]}"   
@@ -46,11 +48,8 @@ class TransactionController < ApplicationController
 	# Authorize for $150 dollars (1000 cents)
 	response = gateway.authorize(15000, credit_card, :ip => "127.0.0.1")
 	if response.success?
-		puts "11111111111111111111111111111111"
-
 	       # Capture the money
-	gateway.capture(1000, response.authorization)	
-	puts "Transaction is complete!"
+	gateway.capture(15000, response.authorization)	
 	flash[:notice] = "Thank you, Transaction is sucessfully completed"
 	puts "params[:player_id]"
 	#@transaction.player_id=params[:id]
@@ -58,20 +57,16 @@ class TransactionController < ApplicationController
 	@transaction.save
 	@player=Player.find_by_id(params[:transaction][:player_id])
 	@transaction=Transaction.last.id
-	puts "22222222222222222222222222"
 	puts @player.id
 	puts @player.transaction.id
-	puts "22222222222222222222222222"
 	@player.update_attributes(:transaction_id => @transaction)
 	redirect_to '/home/thanks'
      end
      else
-     #puts "Error: #{response.message}"
 	flash[:notice] = "invalid"
 	redirect_to '/home/sorry'
 
-  #~ else
-    #~ puts "Error: credit card is not valid. #{credit_card.errors.full_messages.join('. ')}"
+  
   end
   
  end

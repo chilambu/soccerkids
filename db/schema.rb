@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120602073945) do
+ActiveRecord::Schema.define(:version => 20120603134408) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -141,8 +141,8 @@ ActiveRecord::Schema.define(:version => 20120602073945) do
     t.string   "city"
     t.integer  "zip"
     t.string   "state"
-    t.integer  "home_phone"
-    t.integer  "alternate_phone"
+    t.integer  "home_phone",             :limit => 8
+    t.integer  "alternate_phone",        :limit => 8
     t.string   "alternate_email"
     t.string   "role"
   end
