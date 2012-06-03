@@ -8,7 +8,7 @@
 Card Holder Name:
 <%=f.text_field:name %><br />
 <br />
-
+<%= f.hidden_field :player_id, :value => params[:player_id] %>
 
 Billing Address:
 <%=f.text_field:adress %><br />
@@ -32,7 +32,8 @@ What Kind Of Card
 <%= f.select:card_type, options_for_select(['Visa', 'Master Card']) %><br />
 <br />
 
-
+amount:
+<%= f.text_field:amount, :value=>150%> </br>
 
 
 
@@ -43,7 +44,7 @@ Card Number
 
 
 Expiration Date*
-<%=f.date_select :card_date,:start_year => 1960,:end_year =>3000,:prompt => :'select',:order => [:day, :month, :year] %>
+<%=f.date_select :card_date,:start_year => 2011,:end_year =>2025,:prompt => :'select',:order => [:day, :month, :year] %>
 <br />
 <br />
 Card Verification Number:
@@ -59,16 +60,16 @@ Card Verification Number:
 
 var f1 = new LiveValidation('transaction_name');
 f1.add( Validate.Presence );
-var f1 = new LiveValidation('transaction_card_type');
-f1.add( Validate.Presence );
-var f1 = new LiveValidation('transaction_amount');
-f1.add( Validate.Presence );
-var f1 = new LiveValidation('transaction_card_number');
-f1.add( Validate.Presence );
-var f1 = new LiveValidation('transaction_card_verification');
-f1.add( Validate.Presence );
-var f1 = new LiveValidation('transaction_card_date');
-f1.add( Validate.Presence );
+var f2 = new LiveValidation('transaction_card_type');
+f2.add( Validate.Presence );
+var f3 = new LiveValidation('transaction_amount');
+f3.add( Validate.Presence );
+var f4 = new LiveValidation('transaction_card_number');
+f4.add( Validate.Presence );
+var f5 = new LiveValidation('transaction_card_verification');
+f5.add( Validate.Presence );
+var f6 = new LiveValidation('transaction_card_date');
+f6.add( Validate.Presence );
 
 
 </script>

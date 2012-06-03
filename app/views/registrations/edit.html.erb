@@ -51,33 +51,40 @@
 <% end %>
 <script>
 var f1 = new LiveValidation('user_firstname');
-f1.add( Validate.Presence ); </script>
-<script>
+f1.add( Validate.Presence ); 
+
 var f2 = new LiveValidation('user_lastname');
-f2.add( Validate.Presence );</script>
-<script>
+f2.add( Validate.Presence );
+
 var f3 = new LiveValidation('user_addressline1');
-f3.add( Validate.Presence );</script>
-<script>
+f3.add( Validate.Presence );
+
 var f4 = new LiveValidation('user_addressline2');
-f4.add( Validate.Presence );</script>
-<script>
+f4.add( Validate.Presence );
+
 var f5= new LiveValidation('user_city');
-f5.add( Validate.Presence );</script>
-<script>
+f5.add( Validate.Presence );
+
 var f6 = new LiveValidation('user_zip');
-f6.add( Validate.Presence );</script>
-<script>
+f6.add( Validate.Presence );
+f6.add( Validate.Numericality, { onlyInteger: true } );
+
 var f7= new LiveValidation('user_state');
-f7.add( Validate.Presence );</script>
-<script>
+f7.add( Validate.Presence );
+
+
 var f8 = new LiveValidation('user_home_phone');
-f8.add( Validate.Presence );</script>
-<script>
+f8.add( Validate.Presence );
+f8.add( Validate.Length, { is: 10 } );
+f8.add( Validate.Numericality, { onlyInteger: true } );
+
 var f9 = new LiveValidation('user_alternate_phone');
-f9.add( Validate.Presence );</script>
-<script>
+f9.add( Validate.Presence );
+f9.add( Validate.Length, { is: 10 } );
+f9.add( Validate.Numericality, { onlyInteger: true } );
+
 var f10 = new LiveValidation('user_alternate_email');
 f10.add( Validate.Presence );
-
+f10.add( Validate.Email );
+f10.add( Validate.Length, { minimum: 10, maximum: 20 } );
 </script>

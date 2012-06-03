@@ -11,124 +11,45 @@
       </ul>
     </div>
   <% end %>
-<%#=f.date_select :date,:start_year => 1960,:end_year =>3000%>
-<DIV id=u6 style="position:absolute; left:211px; top:156px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u6_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Enter Player's Information</b></span></DIV></DIV>
-<SELECT id=u7  style="position:absolute; left:433px; top:453px; width:80px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
-<OPTION selected value="-- Day --">-- Day --</OPTION>
-<OPTION  value="1">1</OPTION>
-<OPTION  value="2">2</OPTION>
-<OPTION  value="3">3</OPTION>
-<OPTION  value="4">4</OPTION>
-<OPTION  value="5">5</OPTION>
-<OPTION  value="6">6</OPTION>
-<OPTION  value="7">7</OPTION>
-<OPTION  value="8">8</OPTION>
-<OPTION  value="9">9</OPTION>
-<OPTION  value="10">10</OPTION>
-<OPTION  value="11">11</OPTION>
-<OPTION  value="12">12</OPTION>
-<OPTION  value="13">13</OPTION>
-<OPTION  value="14">14</OPTION>
-<OPTION  value="15">15</OPTION>
-<OPTION  value="16">16</OPTION>
-<OPTION  value="17">17</OPTION>
-<OPTION  value="18">18</OPTION>
-<OPTION  value="19">19</OPTION>
-<OPTION  value="20">20</OPTION>
-<OPTION  value="21">21</OPTION>
-<OPTION  value="22">22</OPTION>
-<OPTION  value="23">23</OPTION>
-<OPTION  value="24">24</OPTION>
-<OPTION  value="25">25</OPTION>
-<OPTION  value="26">26</OPTION>
-<OPTION  value="27">27</OPTION>
-<OPTION  value="28">28</OPTION>
-<OPTION  value="29">29</OPTION>
-<OPTION  value="30">30</OPTION>
-<OPTION  value="31">31</OPTION>
-</SELECT>
-<SELECT id=u8  style="position:absolute; left:343px; top:453px; width:87px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
-<OPTION selected value="-- Month --">-- Month --</OPTION>
-<OPTION  value="January">January</OPTION>
-<OPTION  value="Feburary">Feburary</OPTION>
-<OPTION  value="March">March</OPTION>
-<OPTION  value="April">April</OPTION>
-<OPTION  value="May">May</OPTION>
-<OPTION  value="June">June</OPTION>
-<OPTION  value="July">July</OPTION>
-<OPTION  value="August">August</OPTION>
-<OPTION  value="September">September</OPTION>
-<OPTION  value="October">October</OPTION>
-<OPTION  value="November">November</OPTION>
-<OPTION  value="December">December</OPTION>
-</SELECT>
-<SELECT id=u9  style="position:absolute; left:515px; top:453px; width:84px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
-<OPTION selected value="-- Year --">-- Year --</OPTION>
-<OPTION  value="1995">1995</OPTION>
-<OPTION  value="1996">1996</OPTION>
-<OPTION  value="1996">1982</OPTION>
-<OPTION  value="1997">1997</OPTION>
-<OPTION  value="1999">1998</OPTION>
-<OPTION  value="2000">2000</OPTION>
-<OPTION  value="2001">2001</OPTION>
-<OPTION  value="2002">2002</OPTION>
-<OPTION  value="2003">2003</OPTION>
-<OPTION  value="2004">2004</OPTION>
-<OPTION  value="2005">2005</OPTION>
-<OPTION  value="2006">2006</OPTION>
-<OPTION  value="2007">2007</OPTION>
-<OPTION  value="2008">2008</OPTION>
-<OPTION  value="2009">2009</OPTION>
-</SELECT>
+    <DIV  style="position:absolute; left:350px; top:456px; width:300px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+
+<%=f.date_select :dob,:start_year => 1980,:end_year =>2009,:prompt => :'select',:order => [:day, :month, :year] %>
+</DIV>
+    <DIV  style="position:absolute; left:350px; top:490px; width:300px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+
+<%= f.select :gender, options_for_select(['male', 'female']) %>
+</DIV>
+
+<br />
 <DIV id=u10 style="position:absolute; left:246px; top:456px; width:92px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Date of birth</span></DIV></DIV>
+<DIV id=u10 style="position:absolute; left:246px; top:490px; width:92px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Gender</span></DIV></DIV>
 <DIV id=u11 style="position:absolute; left:279px; top:490px; width:65px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u11_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Gender</span></DIV></DIV>
-<DIV id=u12container style="position:absolute; left:349px; top:492px; width:50px; height:16px; ; ; text-align: left " >
+</DIV>
 <DIV id=u13 style="position:absolute; left:16px; top:0px; width:32px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u13_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Male</span></DIV></DIV>
 </DIV>
-<DIV style="position:absolute; left:349px; top:492px; width:50px; height:16px; ; ; text-align: left " ><INPUT id=u12 name="Gender" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
-<DIV id=u14container style="position:absolute; left:409px; top:492px; width:80px; height:16px; ; ; text-align: left " >
+</DIV>
+<DIV style="position:absolute; left:349px; top:492px; width:50px; height:16px; ; ; text-align: left " ></DIV>
 <DIV id=u15 style="position:absolute; left:16px; top:0px; width:62px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u15_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Female</span></DIV></DIV>
 </DIV>
-<DIV style="position:absolute; left:409px; top:492px; width:80px; height:16px; ; ; text-align: left " ><INPUT id=u14 name="Gender" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+</DIV>
+<DIV style="position:absolute; left:409px; top:492px; width:80px; height:16px; ; ; text-align: left " ></DIV>
 <DIV id=ou16 style="position:absolute; left:590px; top:705px; width:142px; height:26px;; overflow:visible">
 <span style="position:absolute; left:-3px; top:-3px; width:150px; height:34px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Contact info_files/Registration page_files/u16.png',sizingMethod='scale');
 "><img style="width:150px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="images/Contact info_files/Registration page_files/u16.png" border="0" alt=""></span>
 </DIV>
+
  <%= f.hidden_field :user_id, :value => current_user.id %> 
-  <div class="field">
-    <%#= f.label :gender %><br />
-       <%#= f.label :male %>&nbsp;<%#= f.label :female %><br />
-       <%#= f.radio_button :gender, true %> <%#= f.label :gender, "Yes" %>
-<%#= f.radio_button :gender, false %> <%#= f.label :gender, "No" %>
-  </div>
-  <div class="field">
-<span style=" font-family:'Arial'; color:#000000; font-size:10pt;">
-       <script>
-    $(function() {
-        $( "#datepicker" ).datepicker(
-        {
-            changeMonth: true,
-            changeYear: true
-        });
-    });
-    </script>
-    <%#= f.datepicker :dob, :id=>"datepicker" %>
-    </span>
-  </div>
+  
 <DIV id=u16container style="position:absolute; left:590px; top:705px; width:142px; height:26px;; overflow:visible">
-<DIV id=u17 style="position:absolute; left:2px; top:4.5px; width:137px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u17 style="position:absolute; left:2px; top:-60px; width:137px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u17_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= f.submit %></span></div></DIV></DIV>
 </DIV>
 
-<%#= link_to "Label", :controller => :player, :action => :addplayer %>
-<DIV id=u22 style="position:absolute; left:221px; top:604px; width:120px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22 style="position:absolute; left:221px; top:576px; width:120px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">&nbsp; <%= f.label :registrant_info %>Registrant Info (medical / special) </span></DIV></DIV>
 <div style="position:absolute; left:350px; top:580px; width:250px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  > <%= f.text_field :registrant_info %></div>
 <IMG id=u47 src="Resources/transparent.gif" style="position:absolute; left:190px; top:266px; width:550px; height:140px"  >
