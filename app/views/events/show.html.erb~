@@ -38,8 +38,8 @@
 
 
 </DIV>
-<DIV id=u30container style="position:absolute; left:226px; top:391px; width:150px; height:1px;; overflow:visible">
-<h3>Listing&nbsp;your&nbsp;players</h3>
+<DIV id=u30container style="position:absolute; left:226px; top:391px; width:150px; height:1px; ; overflow:visible">
+<h3>Listing&nbsp;your&nbsp;players&nbsp;click&nbsp;on&nbsp;player&nbsp;name&nbsp;to &nbsp;continue&nbsp;registeration&nbsp;&nbsp;&nbsp;</h3>
 
 
 <table border="5">
@@ -49,7 +49,7 @@
 <% @players.each do |player| %>
   <tr>
 <td>registerfor&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to player.first_name, "/events/full/#{@event.id}/#{player.id}"%></td>
-<td><%= player.id %></td>
+
 </tr>
 <% end %>
 </table>

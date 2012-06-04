@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   # GET /events
   # GET /events.xml
+
   def index
     pl_ids=[]
     if params[:pl]

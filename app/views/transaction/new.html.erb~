@@ -1,5 +1,7 @@
 <br><br><br><br><br><br>
 <%= render :partial => "layouts/first" %>
+<script src="/javascripts/livevalidation_standalone.js"></script>
+
 <h3 align="center">Transaction</h3>
 <div align=center>
 <%= form_for :transaction ,:url=>{:action=>'create',:id=>params[:id]} do |f|%><br/>
@@ -59,17 +61,36 @@ Card Verification Number:
 <script>
 
 var f1 = new LiveValidation('transaction_name');
-f1.add( Validate.Presence );
+f1.add( Validate.Presence );</script>
+<script>
 var f2 = new LiveValidation('transaction_card_type');
-f2.add( Validate.Presence );
+f2.add( Validate.Presence );</script>
+<script>
 var f3 = new LiveValidation('transaction_amount');
-f3.add( Validate.Presence );
+f3.add( Validate.Presence );</script>
+<script>
 var f4 = new LiveValidation('transaction_card_number');
-f4.add( Validate.Presence );
+f4.add( Validate.Presence );</script>
+<script>
 var f5 = new LiveValidation('transaction_card_verification');
-f5.add( Validate.Presence );
+f5.add( Validate.Presence );</script>
+<script>
 var f6 = new LiveValidation('transaction_card_date');
 f6.add( Validate.Presence );
-
-
 </script>
+<script>
+var f7 = new LiveValidation('transaction_adress');
+f7.add( Validate.Presence );</script>
+<script>
+
+var f8 = new LiveValidation('transaction_city');
+f8.add( Validate.Presence );</script>
+<script>
+
+var f9 = new LiveValidation('transaction_state');
+f9.add( Validate.Presence );</script>
+<script>
+
+var f10 = new LiveValidation('transaction_zip');
+f10.add( Validate.Presence );</script>
+
