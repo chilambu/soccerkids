@@ -1,3 +1,4 @@
+<script src="/javascripts/livevalidation_standalone.js"></script>
 
 <%= render :partial => "layouts/first" %>
 <%= form_for(@player) do |f| %>
@@ -11,7 +12,7 @@
       </ul>
     </div>
   <% end %>
-    <DIV  style="position:absolute; left:350px; top:456px; width:300px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+    <DIV  style="position:absolute; left:350px; top:456px; width:500px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 
 <%=f.date_select :dob,:start_year => 1980,:end_year =>2009,:prompt => :'select',:order => [:day, :month, :year] %>
 </DIV>
@@ -53,7 +54,7 @@ src="images/Contact info_files/Registration page_files/u16.png" border="0" alt="
 <DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">&nbsp; <%= f.label :registrant_info %>Registrant Info (medical / special) </span></DIV></DIV>
 <div style="position:absolute; left:350px; top:580px; width:250px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  > <%= f.text_field :registrant_info %></div>
 <IMG id=u47 src="Resources/transparent.gif" style="position:absolute; left:190px; top:266px; width:550px; height:140px"  >
-<DIV id=u49 style="position:absolute; left:212px; top:284px; width:150px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u49 style="position:absolute; left:212px; top:284px; width:300px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u49_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;"><%= f.label :Playersfirst_name %></span><span style=" font-family:'Verdana'; color:#FF0000; font-size:11pt;">*</span></DIV></DIV>
 <div style="position:absolute; left:359px; top:282px; width:150px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :first_name %></div>
 <DIV id=u51 style="position:absolute; left:199px; top:321px; width:141px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -74,5 +75,36 @@ src="images/Contact info_files/Registration page_files/u16.png" border="0" alt="
 <IMG id=u63 src="Resources/transparent.gif" style="position:absolute; left:300px; top:414px; width:180px; height:20px"  >
 <DIV id=u65 style="position:absolute; left:248px; top:532px; width:90px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u65_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;"><%= f.label :school_name %></span></DIV></DIV>
-<div style="position:absolute; left:350px; top:527px; width:160px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :school_name %></div>
+<div style="position:absolute; left:350px; top:527px; width:300px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :school_name %></div>
+
+
+<script>
+var f1 = new LiveValidation('player_first_name');
+f1.add( Validate.Presence ); 
+
+var f2 = new LiveValidation('player_last_name');
+f2.add( Validate.Presence );
+
+var f3 = new LiveValidation('player_dob_3i');
+f3.add( Validate.Presence );
+
+var f4 = new LiveValidation('player_dob_2i');
+f4.add( Validate.Presence );
+
+var f5= new LiveValidation('player_dob_1i');
+f5.add( Validate.Presence );
+
+var f6 = new LiveValidation('player_school_name');
+f6.add( Validate.Presence );
+
+
+var f7= new LiveValidation('player_registrant_info');
+f7.add( Validate.Presence );
+
+
+</script>
+
+
+
+
 <% end %>
