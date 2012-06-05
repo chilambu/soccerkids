@@ -1,51 +1,44 @@
 Soccerk::Application.routes.draw do
 
-  root :to => 'home#homepage'
+root :to => 'home#homepage'
+devise_for :users, :controllers => {:registrations => "registrations"}
+resources :events 
+resources :transaction
+resources :parents
 
-   devise_for :users, :controllers => {:registrations => "registrations"}
+resources :programs
+	match 'pro'=> 'programs#new'
+	match 'pro_list'=> 'programs#list'
 
 
- resources :events
  
- resources :transaction
-
-  resources :parents
-
-  resources :programs
-  
-  resources :program_list
-  
-  
-match 'home/editparent1'=> 'home#editparent1'
-match 'home/editparent'=> 'home#editparent'
-match 'home/showp'=> 'home#showp'
-match 'home/thanks'=> 'home#thanks'
-match 'home/sorry'=> 'home#sorry'
-match 'home/alreadypaid'=> 'home#alreadypaid'
-  match 'home/redirect'=> 'home#redirect_page'
-   match 'home/AboutSoccerKids'=> 'home#aboutSoccerKids'
-    match 'home/help'=> 'home#help'
-   match 'home/soccerkidsonlinestore'=> 'home#soccerkidsonlinestore'
-
-
-  resources :players
-  match 'players/addplayer'=> 'players#addplayer'
-match 'playe'=>'players#new'
-
-match 'use/pd'=>'use#pd'
-match 'events/full/:id/:player_id'=> 'events#full'
-match 'transaction/new/:id/:player_id'=> 'transaction#new'
-
-
-
-
-   match 'home/programs'=> 'home#programs'
-   match 'program_list/create'=> "program_list#create", :as => "programlists"
-   match 'pro'=> 'programs#new'
-   match 'pro_list'=> 'programs#list'
  
-   match 'use/notifi' =>'use#notifi'  
-   match 'use/notifi1' =>'use#notifi1'
+resources :program_list
+	match 'home/editparent1'=> 'home#editparent1'
+	match 'home/editparent'=> 'home#editparent'
+	match 'home/showp'=> 'home#showp'
+	match 'home/thanks'=> 'home#thanks'
+	match 'home/sorry'=> 'home#sorry'
+	match 'home/alreadypaid'=> 'home#alreadypaid'
+	match 'home/redirect'=> 'home#redirect_page'
+	match 'home/AboutSoccerKids'=> 'home#aboutSoccerKids'
+	match 'home/help'=> 'home#help'
+	match 'home/soccerkidsonlinestore'=> 'home#soccerkidsonlinestore'
+	match 'home/programs'=> 'home#programs'
+
+resources :players
+	match 'players/addplayer'=> 'players#addplayer'
+	match 'playe'=>'players#new'
+
+        match 'events/full/:id/:player_id'=> 'events#full'
+	match 'transaction/new/:id/:player_id'=> 'transaction#new'
+
+        match 'program_list/create'=> "program_list#create", :as => "programlists"
+
+	match 'use/pd'=>'use#pd'
+        match 'use/notifi' =>'use#notifi'  
+        match 'use/notifi1' =>'use#notifi1'
+        match 'use/enlarge' =>'use#enlarge'
 
 # The priority is based upon order of creation:
   # first created -> highest priority.

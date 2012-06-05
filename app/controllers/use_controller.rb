@@ -21,5 +21,6 @@ redirect_to "/programs"
  def pd
 	  @event = Event.find(params[:id])
  end
-
+def enlarge
+	end
 end
