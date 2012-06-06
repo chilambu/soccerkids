@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 gem "galetahub-simple_captcha", :require => "simple_captcha"
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'activemerchant'
 gem 'mysql2','<0.3'
 gem 'devise'

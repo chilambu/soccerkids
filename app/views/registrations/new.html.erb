@@ -1,6 +1,14 @@
 <%= render :partial => "layouts/first" %>
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
+
+<DIV>
+<span style="position:absolute; left:px; top:220px; width:698px; height:200px;;">
+<img src="/images/u50.png" border="0" alt=""></span>
+</DIV>
+<DIV id=u32 style="position:absolute; left:110px; top:225px; width:250px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u32_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:10pt;"><b>Please give your account information</b></span></DIV></DIV>
+
 <DIV id=u3 style="position:absolute; left:373px; top:145px; width:257px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u3_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>Create a SoccerKids Account</b></span></DIV></DIV>
 <DIV id=u3 style="position:absolute; left:450px; top:600px; width:257px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -25,3 +33,4 @@
 <%= f.simple_captcha :label => "Enter character.." %> </span>
 </DIV>
 <% end %>
+

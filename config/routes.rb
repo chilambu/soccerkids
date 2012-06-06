@@ -9,9 +9,9 @@ resources :parents
 resources :programs
 	match 'pro'=> 'programs#new'
 	match 'pro_list'=> 'programs#list'
+	match 'programs/search'=> 'programs#search'
 
 
- 
  
 resources :program_list
 	match 'home/editparent1'=> 'home#editparent1'

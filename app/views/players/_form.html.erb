@@ -12,11 +12,11 @@
       </ul>
     </div>
   <% end %>
-    <DIV  style="position:absolute; left:350px; top:456px; width:500px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+    <DIV  style="position:absolute; left:350px; top:456px; width:700px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 
 <%=f.date_select :dob,:start_year => 1980,:end_year =>2009,:prompt => :'select',:order => [:day, :month, :year] %>
 </DIV>
-    <DIV  style="position:absolute; left:350px; top:490px; width:300px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+    <DIV  style="position:absolute; left:350px; top:490px; width:700px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 
 <%= f.select :gender, options_for_select(['male', 'female']) %>
 </DIV>
@@ -24,7 +24,7 @@
 <br />
 <DIV id=u10 style="position:absolute; left:246px; top:456px; width:92px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Date of birth</span></DIV></DIV>
-<DIV id=u10 style="position:absolute; left:246px; top:490px; width:92px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u10 style="position:absolute; left:246px; top:490px; width:500px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Gender</span></DIV></DIV>
 <DIV id=u11 style="position:absolute; left:279px; top:490px; width:65px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 </DIV>
@@ -39,43 +39,43 @@
 <DIV id=ou16 style="position:absolute; left:590px; top:705px; width:142px; height:26px;; overflow:visible">
 <span style="position:absolute; left:-3px; top:-3px; width:150px; height:34px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Contact info_files/Registration page_files/u16.png',sizingMethod='scale');
-"><img style="width:150px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+"><img style="width:500px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="images/Contact info_files/Registration page_files/u16.png" border="0" alt=""></span>
 </DIV>
 
  <%= f.hidden_field :user_id, :value => current_user.id %> 
   
-<DIV id=u16container style="position:absolute; left:590px; top:705px; width:142px; height:26px;; overflow:visible">
-<DIV id=u17 style="position:absolute; left:2px; top:-60px; width:137px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u16container style="position:absolute; left:590px; top:705px; width:500px; height:26px;; overflow:visible">
+<DIV id=u17 style="position:absolute; left:2px; top:-60px; width:500px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u17_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= f.submit %></span></div></DIV></DIV>
 </DIV>
 
-<DIV id=u22 style="position:absolute; left:221px; top:576px; width:120px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">&nbsp; <%= f.label :registrant_info %>Registrant Info (medical / special) </span></DIV></DIV>
-<div style="position:absolute; left:350px; top:580px; width:250px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  > <%= f.text_field :registrant_info %></div>
+<DIV id=u22 style="position:absolute; left:221px; top:576px; width:300px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">&nbsp; <%= f.label :registrant_info %>Registrant Info(medical / special) </span></DIV></DIV>
+<div style="position:absolute; left:350px; top:580px; width:500px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  > <%= f.text_field :registrant_info %></div>
 <IMG id=u47 src="Resources/transparent.gif" style="position:absolute; left:190px; top:266px; width:550px; height:140px"  >
-<DIV id=u49 style="position:absolute; left:212px; top:284px; width:300px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u49 style="position:absolute; left:212px; top:284px; width:500px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u49_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;"><%= f.label :Playersfirst_name %></span><span style=" font-family:'Verdana'; color:#FF0000; font-size:11pt;">*</span></DIV></DIV>
-<div style="position:absolute; left:359px; top:282px; width:150px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :first_name %></div>
-<DIV id=u51 style="position:absolute; left:199px; top:321px; width:141px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<div style="position:absolute; left:359px; top:282px; width:500px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :first_name %></div>
+<DIV id=u51 style="position:absolute; left:199px; top:321px; width:500px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u51_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;"><%= f.label :PlayersMiddle_Name %></span></DIV></DIV>
-<div style="position:absolute; left:359px; top:317px; width:81px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :middle_name %></div>
-<DIV id=u53 style="position:absolute; left:212px; top:351px; width:139px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<div style="position:absolute; left:359px; top:317px; width:500px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :middle_name %></div>
+<DIV id=u53 style="position:absolute; left:212px; top:351px; width:500px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u53_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;"> <%= f.label :Playerslast_name %></span><span style=" font-family:'Verdana'; color:#FF0000; font-size:11pt;">*</span></DIV></DIV>
-<div style="position:absolute; left:359px; top:352px; width:150px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   > <%= f.text_field :last_name %></div>
+<div style="position:absolute; left:359px; top:352px; width:500px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   > <%= f.text_field :last_name %></div>
 </DIV>
 <DIV id=u61container style="position:absolute; left:298px; top:256px; width:124px; height:17px;; overflow:visible">
 <DIV id=u62 style="position:absolute; left:2px; top:-1px; width:119px; height:18px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u62_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#AAAAAA; font-size:11pt;"><b>Name&nbsp; details</b></span></div></DIV></DIV>
 </DIV>
-<DIV id=u63container style="position:absolute; left:300px; top:414px; width:181px; height:21px;; overflow:visible">
+<DIV id=u63container style="position:absolute; left:300px; top:414px; width:300px; height:21px;; overflow:visible">
 <DIV id=u64 style="position:absolute; left:2px; top:1px; width:176px; height:18px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u64_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#AAAAAA; font-size:11pt;"><b>Basic information</b></span></div></DIV></DIV>
 </DIV>
-<IMG id=u63 src="Resources/transparent.gif" style="position:absolute; left:300px; top:414px; width:180px; height:20px"  >
-<DIV id=u65 style="position:absolute; left:248px; top:532px; width:90px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<IMG id=u63 src="Resources/transparent.gif" style="position:absolute; left:300px; top:414px; width:500px; height:20px"  >
+<DIV id=u65 style="position:absolute; left:248px; top:532px; width:500px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u65_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;"><%= f.label :school_name %></span></DIV></DIV>
-<div style="position:absolute; left:350px; top:527px; width:300px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :school_name %></div>
+<div style="position:absolute; left:350px; top:527px; width:500px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :school_name %></div>
 
 
 <script>

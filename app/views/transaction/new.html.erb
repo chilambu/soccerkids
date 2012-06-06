@@ -67,13 +67,19 @@ var f2 = new LiveValidation('transaction_card_type');
 f2.add( Validate.Presence );</script>
 <script>
 var f3 = new LiveValidation('transaction_amount');
-f3.add( Validate.Presence );</script>
+f3.add( Validate.Presence );
+f3.add( Validate.Numericality );
+</script>
 <script>
 var f4 = new LiveValidation('transaction_card_number');
-f4.add( Validate.Presence );</script>
+f4.add( Validate.Presence );
+f4.add( Validate.Numericality );
+</script>
 <script>
 var f5 = new LiveValidation('transaction_card_verification');
-f5.add( Validate.Presence );</script>
+f5.add( Validate.Presence );
+f5.add( Validate.Numericality );
+</script>
 <script>
 var f6 = new LiveValidation('transaction_card_date');
 f6.add( Validate.Presence );
@@ -92,5 +98,8 @@ f9.add( Validate.Presence );</script>
 <script>
 
 var f10 = new LiveValidation('transaction_zip');
-f10.add( Validate.Presence );</script>
+f10.add( Validate.Presence );
+f10.add( Validate.Numericality );
+</script>
+
 

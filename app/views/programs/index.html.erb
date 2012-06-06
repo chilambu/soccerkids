@@ -56,7 +56,12 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Program l
 src="/images/Program list_files/u24.png" border="0" alt=""></span>
 
 </DIV>
+<DIV id style="position:absolute; left:600px; top:100px; width:251px; height:26px;; overflow:visible">
 
 
-
+<%= form_tag(:controller => "programs", :action => "search", :params => params) do %>
+    Search the program <%=text_field_tag :name%>
+  <%= submit_tag "search" %>
+<% end %>
+</DIV>
 

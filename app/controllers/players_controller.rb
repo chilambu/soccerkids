@@ -47,7 +47,8 @@ class PlayersController < ApplicationController
     respond_to do |format|
       if @player.save
         #format.html { render :text =>"success" }
-        format.html { redirect_to programs_path }
+        format.html { redirect_to programs_path } #if params[:test].blank?
+       # format.html { redirect_to new_player_path } if params[:test]=="true"
         format.xml  { render :xml => @player, :status => :created, :location => @player }
       else
         format.html { render :action => "new" }

@@ -91,4 +91,7 @@ class ProgramsController < ApplicationController
       format.html  { render :xml => @program_list }
     end
   end
+  def search
+ 	@program=Program.find_all_by_name(params[:name])
+	     end
 end

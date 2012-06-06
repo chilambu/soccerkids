@@ -1,0 +1,16 @@
+<% if @program.present? %>
+
+     <table >
+       
+        <tr>
+            <%  @program.each do |f| %>
+            <td><%#= link_to f.programs, "/programs/index/#{f.id}" %></td>
+                      <td><%= link_to f.name, "/program_list?pg=#{f.id}" %></td>
+           <% end %>          
+        </tr>
+
+        </table>
+    <% else %>
+        <h1> Search not found ! Please try again !!!</h1>
+    <% end %>
+
