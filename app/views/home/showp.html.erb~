@@ -1,59 +1,54 @@
 
-
-
+<%= render :partial => "layouts/first" %>
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;">
+<u><b><div style="position:absolute; left:100px; top:150px; width:300px; height:7px; ; ;text-align:left">
 <p id="notice"><%= notice %></p>
+<table>
+<tr>
+<th>Firstname:</th>
+<td>  <%= current_user.firstname %></td>
+</tr>
+ <tr>
+<th></br>
+Lastname:</th>
+ <td> <%= current_user.lastname %></td>
 
-<p>
-  <b>Firstname:</b>
-  <%= current_user.firstname %>
-</p>
+</tr>
+ <tr>
+<th></br>Addressline1:</th><td>
+  <%= current_user.addressline1 %></td>
+</tr>
+ <tr>
+<th></br>Addressline2:</th><td>
+  <%= current_user.addressline2 %></td>
+</tr>
+ <tr>
+<th></br>City:</th><td>
+  <%= current_user.city %></td>
+</tr>
+ <tr>
+<th></br>Zip:</th><td>
+  <%= current_user.zip %></td>
+</tr>
+ <tr>
+<th></br>State:</th><td>
+  <%= current_user.state %></td>
+</tr>
+ <tr>
+<th></br>Home phone:</th><td>
+  <%= current_user.home_phone %></td>
+</tr>
+ <tr>
+<th></br>Alternate phone:</th><td>
+  <%= current_user.alternate_phone %></td>
+</tr>
+ <tr>
+<th></br>Alternate email:</th><td>
+  <%= current_user.alternate_email %></td></tr>
  
-<p>
-  <b>Lastname:</b>
-  <%= current_user.lastname %>
-</p>
 
-<p>
-  <b>Addressline1:</b>
-  <%= current_user.addressline1 %>
-</p>
-
-<p>
-  <b>Addressline2:</b>
-  <%= current_user.addressline2 %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= current_user.city %>
-</p>
-
-<p>
-  <b>Zip:</b>
-  <%= current_user.zip %>
-</p>
-
-<p>
-  <b>State:</b>
-  <%= current_user.state %>
-</p>
-
-<p>
-  <b>Home phone:</b>
-  <%= current_user.home_phone %>
-</p>
-
-<p>
-  <b>Alternate phone:</b>
-  <%= current_user.alternate_phone %>
-</p>
-
-<p>
-  <b>Alternate email:</b>
-  <%= current_user.alternate_email %>
-</p> 
-
-
-<%= link_to 'Edit', home_editparent_path(current_user) %>
-<%= link_to 'Back', '/programs' %>
+</table>
+</br>
+<%= link_to 'Edit', home_editparent_path(current_user) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= link_to 'listprograms', '/programs' %>
 

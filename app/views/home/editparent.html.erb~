@@ -1,42 +1,47 @@
 <h2>Edit </h2>
+<script src="/javascripts/livevalidation_standalone.js"></script>
+
+<style>   
+     input[type=text] { float: right; width: 250px; }
+</style>
 <%= render :partial => "layouts/first" %>
-<div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;">
-<u><div style="position:absolute; left:100px; top:150px; width:600px; height:7px; ; ;text-align:center">
+<div ><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;">
+<u><div style="position:absolute; left:100px; top:150px; width:600px; height:7px; ; ">
 <%= form_for:user, :url => {:controller=>'home',:action=>'editparent1'} do |f| %>
 
 
-  <div><%= f.label :firstname= %>
+  <div><%= f.label :firstname %>
   <%= f.text_field :firstname %></div><br>
 
 
-  <div><%= f.label :lastname= %>
+  <div><%= f.label :lastname %>
   <%= f.text_field :lastname %></div><br>
 
 
-  <div><%= f.label :AddressLine1= %>
+  <div><%= f.label :AddressLine1%>
   <%= f.text_field :addressline1 %></div><br>
 
- <div><%= f.label :AddressLine2= %>
+ <div><%= f.label :AddressLine2 %>
   <%= f.text_field :addressline2 %></div><br>
 
 
-  <div><%= f.label :city= %>
+  <div><%= f.label :city %>
   <%= f.text_field :city %></div><br>
 
-  <div><%= f.label :zip= %>
+  <div><%= f.label :zip %>
   <%= f.text_field :zip %></div><br>
 
-  <div><%= f.label :state= %>
+  <div><%= f.label :state%>
   <%= f.text_field :state %></div><br>
 
-  <div><%= f.label :homephone= %>
+  <div><%= f.label :homephone %>
   <%= f.text_field :home_phone %></div><br>
 
 
-  <div><%= f.label :alternatephone= %>
+  <div><%= f.label :alternatephone %>
   <%= f.text_field :alternate_phone %></div><br>
 
-  <div><%= f.label :alternateemail= %>
+  <div><%= f.label :alternateemail%>
   <%= f.text_field :alternate_email %></div><br>
 
 
@@ -44,6 +49,45 @@
   <div><%= f.submit "continue" %></div>
 <% end %>
 
+<script>
+var f1 = new LiveValidation('user_firstname');
+f1.add( Validate.Presence ); 
+</script><script>
+var f2 = new LiveValidation('user_lastname');
+f2.add( Validate.Presence );
+</script><script>
+var f3 = new LiveValidation('user_addressline1');
+f3.add( Validate.Presence );
+</script><script>
+var f4 = new LiveValidation('user_addressline2');
+f4.add( Validate.Presence );
+</script><script>
+var f5= new LiveValidation('user_city');
+f5.add( Validate.Presence );
+</script><script>
+var f6 = new LiveValidation('user_zip');
+f6.add( Validate.Presence );
+f6.add( Validate.Numericality, { onlyInteger: true } );
+</script><script>
+var f7= new LiveValidation('user_state');
+f7.add( Validate.Presence );
+
+</script><script>
+var f8 = new LiveValidation('user_home_phone');
+f8.add( Validate.Presence );
+f8.add( Validate.Length, { is: 10 } );
+f8.add( Validate.Numericality, { onlyInteger: true } );
+</script><script>
+var f9 = new LiveValidation('user_alternate_phone');
+f9.add( Validate.Presence );
+f9.add( Validate.Length, { is: 10 } );
+f9.add( Validate.Numericality, { onlyInteger: true } );
+</script><script>
+var f10 = new LiveValidation('user_alternate_email');
+f10.add( Validate.Presence );
+f10.add( Validate.Email );
+f10.add( Validate.Length, { minimum: 10, maximum: 20 } );
+</script>
 
 
 <%= link_to "Back", :root %>

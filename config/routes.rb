@@ -28,7 +28,7 @@ resources :program_list
 
 resources :players
 	match 'players/addplayer'=> 'players#addplayer'
-	match 'playe'=>'players#new'
+	match 'players'=>'players#new'
 
         match 'events/full/:id/:player_id'=> 'events#full'
 	match 'transaction/new/:id/:player_id'=> 'transaction#new'

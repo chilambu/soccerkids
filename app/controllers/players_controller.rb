@@ -41,20 +41,36 @@ class PlayersController < ApplicationController
   # POST /players
   # POST /players.xml
   def create
-	  puts params
-    @player = Player.new(params[:player])
 
-    respond_to do |format|
-      if @player.save
-        #format.html { render :text =>"success" }
-        format.html { redirect_to programs_path } #if params[:test].blank?
-       # format.html { redirect_to new_player_path } if params[:test]=="true"
-        format.xml  { render :xml => @player, :status => :created, :location => @player }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @player.errors, :status => :unprocessable_entity }
-      end
-    end
+	@player = Player.new(params[:player])
+	@player.save
+	if params[:commit]=="addplayer" 
+	redirect_to new_player_path
+	else
+	redirect_to programs_path
+	end
+    
+
+    #~ respond_to do |format|
+      #~ if @player.save
+        #~ #format.html { render :text =>"success" }
+        #~ format.html { redirect_to programs_path } #if params[:test].blank?
+       #~ # format.html { redirect_to new_player_path } if params[:test]=="true"
+      #~ redirect_to params[:commit]== "save" ? "/players/new" : "/programs/index"
+      
+       #~ if params[:commit]=="save"
+	       #~ p 11111111111
+	       #~ render "/players/new"
+	#~ else
+		#~ p 22222222222222
+		#~ redirect_to "/programs/index"
+		#~ end
+        #~ #format.xml  { render :xml => @player, :status => :created, :location => @player }
+      #~ else
+        #~ #format.html { render :action => "new" }
+        #~ #format.xml  { render :xml => @player.errors, :status => :unprocessable_entity }
+      #~ end
+    #~ end
   end
   # PUT /players/1
   # PUT /players/1.xml

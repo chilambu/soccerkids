@@ -1,12 +1,12 @@
 
 <%= render :partial => "layouts/first" %>
-<h1>Listing programs</h1>
-<DIV  style="position:absolute; left:22px; top:250px; width:176px; height:26px;; overflow:visible">
+
+<DIV  style="position:absolute;color:#000000; left:22px; top:250px; width:176px; height:26px;; overflow:visible">
 <% @programs.each do |@program| %>
 
   <%if 1==1%>
   
-<div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
    <%= link_to "#{@program.name}","program_list?pg="+@program.id.to_s%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <%#= link_to "Add Product", '/pages/product?param1=value1&param2=value2' %>
           <%= link_to 'ShowALL',events_path(:pg =>@program.id)%>
@@ -56,10 +56,12 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Program l
 src="/images/Program list_files/u24.png" border="0" alt=""></span>
 
 </DIV>
+<DIV id style="position:absolute; left:600px; top:100px; width:251px; height:26px;; overflow:visible">
 
 
 <%= form_tag(:controller => "programs", :action => "search", :params => params) do %>
     Search the program <%=text_field_tag :name%>
   <%= submit_tag "search" %>
 <% end %>
+</DIV>
 

@@ -1,13 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+
+<style type="text/css">
+   body{padding:20px; font-size:15px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   h2 {font-weight:bold; color:#000099; margin:10px 0px; }
+   p span {color:#006600; font-weight:bold; }
+   a, a:link, a:visited {color:#0000FF;}
+   textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 20px; font-family: Consolas,monospace;}
+   textarea.html {height: 300px;}
+   p {margin: 0 0 10px 0;}
+   code, pre {font-family: Consolas,monospace; color: green;}
+   ol li {margin: 0 0 15px 0;}
+</style>
+
+</head>
+
+<body background="/images/a.jpeg">
+
+
+
+</body>
+</html>
+
+
+
 <span style="position:absolute; left:1px; top:0px; width:820px; height:60px">
-<IMG id=ou29 src="/images/u29.jpg" style="position:absolute;left:0px;top:0px;width:100%;height:60px">
+<IMG id=ou29 src="/images/u29.jpg" style="position:absolute;left:0px;top:0px; width:1350px; height:60px">
 </span>
 
 
 
 
-<DIV id=ou30 style="position:absolute; left:1px; top:57px; width:821px; height:26px;; overflow:visible">
+<DIV id=ou30 style="position:absolute; left:1px; top:57px;  width:1350px; height:60px; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:829px; height:34px; ;
+<span style="position:absolute; left:-3px; top:-3px;  width:1350px; height:60px;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/u30.png',sizingMethod='scale');
 "><img style="width:829px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="/images/u30.png" border="0" alt=""></span>
@@ -15,13 +43,13 @@ src="/images/u30.png" border="0" alt=""></span>
 
 <DIV id=u19container style="position:absolute; left:50px; top:650px; width:251px; height:26px;; overflow:visible">
 
-<DIV id=u20 style="position:absolute; left:2px; top:5.5px; width:246px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u20 style="position:absolute; left:2px; top:50px; width:246px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u20_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#808080; font-size:9pt;">@ 2005 SoccerKids, Inc. :: Design by</span></div></DIV></DIV>
 </DIV>
 
 <DIV id=u21container style="position:absolute; left:290px; top:650px; width:146px; height:26px;; overflow:visible">
 
-<DIV id=u22 style="position:absolute; left:2px; top:4.5px; width:141px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u22 style="position:absolute; left:2px; top:50px; width:141px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u22_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>soccerkids@railsfactory</u></span></div></DIV></DIV>
 </DIV>
 
@@ -37,7 +65,7 @@ src="/images/u30.png" border="0" alt=""></span>
 <DIV id=u26container style="position:absolute; left:626px; top:57px; width:96px; height:26px;; overflow:visible">
 
 <DIV id=u27 style="position:absolute; left:2px; top:4.5px; width:91px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to 'myaccount', home_showp_path %></u>&nbsp; <u>|</u></span></div></DIV></DIV>
+<DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to 'myaccount', home_showp_path %></u>&nbsp; </span></div></DIV></DIV>
 </DIV>
 
 
@@ -47,7 +75,7 @@ src="/images/u30.png" border="0" alt=""></span>
 <DIV id=u28container style="position:absolute; left:716px; top:57px; width:61px; height:26px;; overflow:visible">
 
 <DIV id=u29 style="position:absolute; left:2px; top:4.5px; width:56px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u29_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to 'Login', new_user_session_path %></u>&nbsp; <u>|</u></span></div></DIV></DIV>
+<DIV id=u29_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to 'Login', new_user_session_path %></u>&nbsp; <u></u></span></div></DIV></DIV>
 </DIV>
 
 <DIV id=u28ann style="font-size:1px; position:absolute; left:767px; top:53px; width:1px; height:1px; overflow:visible"></DIV>
@@ -80,13 +108,13 @@ src="/images/u30.png" border="0" alt=""></span>
 
 <DIV id=u36container style="position:absolute; left:114px; top:56px; width:112px; height:26px;; overflow:visible">
 
-<DIV id=u37 style="position:absolute; left:1px; top:4.5px; width:200px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u37 style="position:absolute; left:-40px; top:4.5px; width:200px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u37_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%= link_to 'About SoccerKids', home_AboutSoccerKids_path %></span></div></DIV></DIV>
 </DIV>
 
 <DIV id=u27 style="position:absolute; left:550px; top:60px; width:91px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 
-<DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></u>&nbsp; <u>|</u></span></div></DIV></DIV>
+<DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></u>&nbsp; <u></u></span></div></DIV></DIV>
 </DIV>
 
 <DIV id=u38container style="position:absolute; left:768px; top:57px; width:40px; height:26px;; overflow:visible">

@@ -1,3 +1,3 @@
-<%= render :partial => "layouts/first" %>
-<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;"><u><b><div style="position:absolute; left:px; top:300px; width:600px; height:10px; ; ;text-align:center"><p> SOCCERKIDS IS TO PROVIDES TRAINING TO YOUR CHILD</p></DIV>
+<%= render :partial => "layouts/home" %>
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;"><u><b><div style="position:absolute; left:px; top:300px; width:600px; height:10px; ; ;text-align:center"><p> We are taking  kids soccer training a level higher. This   coming December holidays we will be organizing a one of it's kind   soccer training camp for kids. We will be holding the soccer training   on   the Marina Bay Floating Platform. It promises to be a once in a   life time   experience for your kids. Also in attendance will be our   national  soccer   heroes, to give your kids that extra motivation.Give   you kids a  perfect   year end gift. Slots are very limited and is on a first come first serve basis </p></DIV>
 
