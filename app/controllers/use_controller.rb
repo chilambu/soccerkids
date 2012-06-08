@@ -1,5 +1,5 @@
 class UseController < ApplicationController
- 
+ before_filter :authenticate_user!, :except => [:enlarge]
  def notifi 
 	
  @users=User.new

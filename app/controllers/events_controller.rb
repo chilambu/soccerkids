@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   # GET /events
   # GET /events.xml
+before_filter :authenticate_user!,:only => [:show,:full]
 
   def index
     pl_ids=[]
@@ -28,7 +29,7 @@ class EventsController < ApplicationController
  
   def show
 	@players = Player.find_all_by_user_id(current_user.id)
-    @event = Event.find(params[:id])
+    @event = Event.find_by_id(params[:id])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @event }

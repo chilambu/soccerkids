@@ -1,7 +1,8 @@
 class PlayersController < ApplicationController
   # GET /players
   # GET /players.xml
-  
+  before_filter :authenticate_user!
+
   def index
  @players =Player.find_all_by_user_id(current_user.id)
 #@players = Player.all

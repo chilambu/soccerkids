@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-before_filter :authenticate_user!,:only => [:showp]
+before_filter :authenticate_user!,:only => [:showp,:editparent,:editparent1,:thanks,:alreadypaid,:sorry]
   def index
   end
  def homepage

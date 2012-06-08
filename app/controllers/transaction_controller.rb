@@ -1,5 +1,5 @@
 class TransactionController < ApplicationController
-	
+	  before_filter :authenticate_user!
  def index
    @transaction=Transaction.all
  end
