@@ -5,50 +5,52 @@
 
 
 <div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">
-<u><b><div style="position:absolute; left:100px; top:180px; width:600px; height:7px; ; ;text-align:center">
+<u><b><div style="position:absolute; left:80px; top:90px; width:600px; height:7px; ; ;text-align:left">
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
+<h2>Enter your details</h2>
 
-
-  <div><%= f.label :firstname %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :firstname %>
   <%= f.text_field :firstname %></div><br />
 
 
-  <div><%= f.label :lastname %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :lastname %>
   <%= f.text_field :lastname %></div><br />
 
 
-  <div><%= f.label :AddressLine1 %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :AddressLine1 %>
   <%= f.text_field :addressline1 %></div><br />
 
- <div><%= f.label :AddressLine2 %>
+ <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :AddressLine2 %>
   <%= f.text_field :addressline2 %></div><br />
 
 
-  <div><%= f.label :city %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= f.label :city %>
   <%= f.text_field :city %></div><br />
 
-  <div><%= f.label :zip %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :zip %>
   <%= f.text_field :zip %></div><br />
 
-  <div><%= f.label :state %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :state %>
   <%= f.text_field :state %></div><br />
 
-  <div><%= f.label :homephone %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :homephone %>
   <%= f.text_field :home_phone %></div><br />
 
 
-  <div><%= f.label :alternatephone %>
+  <div>&nbsp;&nbsp;&nbsp;<%= f.label :alternatephone %>
   <%= f.text_field :alternate_phone %></div><br />
 
-  <div><%= f.label :alternateemail %>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :alternateemail %>
   <%= f.text_field :alternate_email %></div><br />
 
 <div><%= f.label :current_password %> 
   <%= f.password_field :current_password %></div><br />
 
 
-  <div><%= f.submit "continue" %></div> 
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= f.submit "continue" %></div> 
 <% end %>
 <script>
 var f1 = new LiveValidation('user_firstname');

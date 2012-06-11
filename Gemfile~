@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 gem "galetahub-simple_captcha", :require => "simple_captcha"
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'activemerchant'
 gem 'mysql2','<0.3'
 gem 'devise'
@@ -11,6 +10,10 @@ gem 'jquery-rails'
 gem 'jquery_datepicker'
 gem 'heroku'
 gem 'pg'
+gem  'rspec'
+gem  'rspec-rails'
+gem 'rspec-core'
+gem  'shoulda'
 
 #gem 'tiny_mce',:git=>"git://github.com/spohlenz/tinymce-rails.git"
 # Use unicorn as the web server

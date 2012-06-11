@@ -48,16 +48,25 @@ src="Program details page_files/u32.png" border="0" alt=""></span>
 
 <DIV id=u15 style="position:absolute; left:125px; top:150px; width:650px; height:50px;text-align: left ; font-family:Arial; text-align:left;" >
 <table border="5">
+<tr>
+<th>firstname</th>
+<th>middlename</th>
+<th>lastname</th>
+<th>date of birth</th>
+<th>school name</th>
+<th>registrant_info</th>
 
+
+</tr>
   <tr>
     <td><%= @player.first_name  %></td>
     <td><%= @player.middle_name %></td>
     <td><%=  @player.last_name %></td>
-    <td><%=  @player.gender %></td>
+
     <td><%= @player.dob%></td>
     <td><%= @player.school_name  %></td>
     <td><%= @player.registrant_info %></td>
-     <td><%= link_to 'register',"/transaction/new/#{@event.id}/#{params[:player_id]}" %></td>
+     <td><b><%= link_to 'register',"/transaction/new/#{@event.id}/#{params[:player_id]}" %></b></td>
   </tr>
 </table>
 </DIV>

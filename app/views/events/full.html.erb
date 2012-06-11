@@ -8,33 +8,32 @@
 </DIV>
 <IMG id=u18 src="Resources/transparent.gif" style="position:absolute; left:100px; top:150px; width:510px; height:260px"  >
 <DIV id=u20 style="position:absolute; left:144px; top:180px; width:117px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u20_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;">Program name:</span></DIV></DIV>
+<DIV id=u20_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program name:</span></DIV></DIV>
 <DIV id=u21 style="position:absolute; left:107px; top:221px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;">Program description: </span></DIV></DIV>
-<DIV id=u22 style="position:absolute; left:130px; top:296px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;">Program location:</span></DIV></DIV>
+<DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program description: </span></DIV></DIV>
+<DIV id=u22 style="position:absolute; left:130px; top:296px; width:200px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Program location:</span></DIV></DIV>
 <DIV id=u23 style="position:absolute; left:260px; top:296px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000fff; font-size:10pt;">  <%= @event.name %></span></DIV></DIV>
+<DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">  <%= @event.name %></span></DIV></DIV>
 <DIV id=u24 style="position:absolute; left:254px; top:180px; width:320px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u24_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;"> <%= @event.name %></span></DIV></DIV>
+<DIV id=u24_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"> <%= @event.name %></span></DIV></DIV>
 <DIV id=u25 style="position:absolute; left:260px; top:217px; width:340px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u25_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:9pt;">This class taught by Coach  <%= @event.coach %> Tuition is <%= @event.tuition %> for  <%= @event.dates %>class meetings.</span></DIV></DIV>
+<DIV id=u25_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">This class taught by Coach  <%= @event.coach %> Tuition is <%= @event.tuition %> for  <%= @event.dates %>class meetings.</span></DIV></DIV>
 <DIV id=u26 style="position:absolute; left:169px; top:260px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u26_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;">Class Time:</span></DIV></DIV>
+<DIV id=u26_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Class Time:</span></DIV></DIV>
 <DIV id=u27 style="position:absolute; left:260px; top:260px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u27_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;"><%= @event.from_time %> </span></DIV></DIV>
+<DIV id=u27_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><%= @event.from_time %> </span></DIV></DIV>
 <DIV id=u28 style="position:absolute; left:196px; top:331px; width:59px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u28_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;">Status:</span></DIV></DIV>
+<DIV id=u28_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Status:</span></DIV></DIV>
 <DIV id=u29 style="position:absolute; left:260px; top:331px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u29_rtf><span style=" font-family:'Arial'; color:#000fff; font-size:10pt;">  <%= @event.status %></span></DIV></DIV>
+<DIV id=u29_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">  <%= @event.status %></span></DIV></DIV>
 <DIV id=ou30 style="position:absolute; left:326px; top:291px; width:81px; height:26px;; overflow:visible">
 
 </DIV>
+<img border="4" alt="" src="/images/shirt.jpg" style="position:absolute; ;top:200px; width:200px; height:150px; left:650px; ">
 
-<img border="4" alt="" src="/images/shirt.jpg" style="position:absolute; ;top:200px; width:200px; height:150px; left:550px; ">
 
-
-<DIV id=u15 style="position:absolute; ;top:400px; width:200px; height:150px; left:550px; text-align: left ; font-family:Arial; text-align:left;color:#000fff; font-size:20pt;">
+<DIV id=u15 style="position:absolute; ;top:400px; width:200px; height:150px; left:650px; text-align: left ; font-family:Arial; text-align:left;color:#000000; font-size:20pt;">
 <%= link_to 'Enlarge image',use_enlarge_path, :onclick=>"window.open(this.href,'Enlarge image', 'height=800, width=600');return false;" %>
 </DIV>
 
@@ -48,16 +47,24 @@ src="Program details page_files/u32.png" border="0" alt=""></span>
 
 <DIV id=u15 style="position:absolute; left:125px; top:150px; width:650px; height:50px;text-align: left ; font-family:Arial; text-align:left;" >
 <table border="5">
+<tr>
+<th>firstname</th>
+<th>middlename</th>
+<th>lastname</th>
+<th>date of birth</th>
+<th>school name</th>
+<th>registrant_info</th>
 
+
+</tr>
   <tr>
     <td><%= @player.first_name  %></td>
     <td><%= @player.middle_name %></td>
     <td><%=  @player.last_name %></td>
-    <td><%=  @player.gender %></td>
     <td><%= @player.dob%></td>
     <td><%= @player.school_name  %></td>
     <td><%= @player.registrant_info %></td>
-     <td><%= link_to 'register',"/transaction/new/#{@event.id}/#{params[:player_id]}" %></td>
+     <td><b><%= link_to 'register',"/transaction/new/#{@event.id}/#{params[:player_id]}" %></b></td>
   </tr>
 </table>
 </DIV>
@@ -65,12 +72,14 @@ src="Program details page_files/u32.png" border="0" alt=""></span>
 
 
 <DIV id=u35 style="position:absolute; left:110px; top:-60px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:10pt;">Tuition:</span></DIV></DIV>
-<DIV id=u36 style="position:absolute; left:250px; top:-60px; width:40px; height:14px; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:9pt;">$155 </span></DIV>
-<DIV id=u37 style="position:absolute; left:-140px; top:50px; width:200px; height:14px; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u37_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:9pt;">Tshirt&nbsp;Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$50</span></DIV>
+<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Tuition:</span></DIV></DIV>
+<DIV id=u36 style="position:absolute; left:175px; top:-60px; width:40px; height:14px; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">$155 </span></DIV>
+<DIV id=u37 style="position:absolute; left:-90px; top:30px; width:200px; height:14px; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u37_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Tshirt&nbsp;Amount&nbsp;&nbsp;&nbsp;$50</span></DIV>
 <DIV id=u31 style="position:absolute; left:-80px; top:50px; width:200px; height:14px; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u31_rtf><span style=" font-family:'Verdana'; color:#000fff; font-size:20pt;">totalt&nbsp;Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$205</span></DIV>
+<DIV id=u31_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;">totalt&nbsp;Amount:&nbsp;&nbsp;&nbsp;&nbsp;$205</span></DIV>
+<DIV id=u3 style="position:absolute; left:180px; top:80px; width:600px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u3_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:13pt;">click register link to continue to do payment</span></DIV>
 
 

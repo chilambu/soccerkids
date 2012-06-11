@@ -82,7 +82,7 @@ src="Reset your password_files/u19.png" border="0" alt=""></span>
 <DIV id=u19container style="position:absolute; left:610px; top:185px; width:80px; height:36px;; overflow:visible">
 
 <DIV id=u20 style="position:absolute; left:2px; top:9.5px; width:75px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u20_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><u>Go Home</u></span></div></DIV></DIV>
+<DIV id=u20_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"></span></div></DIV></DIV>
 </DIV>
 <IMG id=u19 src="Resources/transparent.gif" style="position:absolute; left:610px; top:185px; width:79px; height:35px"  >
 

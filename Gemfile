@@ -10,6 +10,10 @@ gem 'jquery-rails'
 gem 'jquery_datepicker'
 gem 'heroku'
 gem 'pg'
+gem  'rspec'
+gem  'rspec-rails'
+gem 'rspec-core'
+gem  'shoulda'
 
 #gem 'tiny_mce',:git=>"git://github.com/spohlenz/tinymce-rails.git"
 # Use unicorn as the web server
