@@ -12,7 +12,7 @@
   <tr>
     <td><br><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
     <%= link_to "#{programlist.name}",events_path(:pl => programlist.id) %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<%#= link_to 'New Event', new_event_path(:pl =>programlist.id)%></td><br>
+<%= link_to 'New Event', new_event_path(:pl =>programlist.id)%></td><br>
   </tr> 
 <% end %>
 </table>
