@@ -11,7 +11,7 @@
 
 <DIV id=u3 style="position:absolute; left:373px; top:145px; width:257px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u3_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>Create a SoccerKids Account</b></span></DIV></DIV>
-<DIV id=u3 style="position:absolute; left:450px; top:600px; width:257px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u3 style="position:absolute; left:650px; top:600px; width:257px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u3_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><%= f.submit "CREATE MY ACCOUNT" %></span></DIV></DIV>
 </DIV>
 <DIV id=u10 style="position:absolute; left:278px; top:304px; width:96px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -30,7 +30,7 @@
 <DIV id=u27 style="position:absolute; left:233px; top:260px; width:540px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u27_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Please select a username and password which is used to login into your Soccerkids Account</span></DIV></DIV>
 <DIV id=ou28 style="position:absolute; left:260px; top:498px; width:45px; height:20px;; overflow:visible">
-<%= f.simple_captcha :label => "Enter character.." %> </span>
+<%#= f.simple_captcha :label => "Enter character.." %><%= recaptcha_tags %> </span>
 </DIV>
 <% end %>
 

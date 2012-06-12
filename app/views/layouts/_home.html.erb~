@@ -1,138 +1,73 @@
+
+<DIV id=u34 style="position:absolute; left:314px; top:26px; width:20px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u34_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:10pt;"><b>]</b></span></DIV></DIV>
+<DIV id=u35 style="position:absolute; left:610px; top:40px; width:60px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><%= Time.now.strftime("%A") %></span></DIV></DIV>
+<DIV id=u36 style="position:absolute; left:814px; top:8px; width:70px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><%= Time.now.strftime("%I:%M%p") %></span></DIV></DIV>
+
+
+
+<DIV id=u38 style="position:absolute; left:690px; top:8px; width:134px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u38_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><%=Time.now.strftime("%eth %B %Y")%>
+
+</span></DIV></DIV>
+
+
+
+
+
+
+
+
+
 <span style="position:absolute; left:1px; top:0px; width:1350px; height:60px">
 <IMG id=ou29 src="/images/u29.jpg" style="position:absolute;left:0px;top:0px;width:100%;height:60px">
 </span>
-
-
-
-
 <DIV id=ou30 style="position:absolute; left:1px; top:57px;width:1350px; height:26px;; overflow:visible">
-
 <span style="position:absolute; left:-3px; top:-3px;width:1350px; height:34px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/u30.png',sizingMethod='scale');
 "><img style="width:1350px; height:50px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="/images/u30.png" border="0" alt=""></span>
 </DIV>
-
 <DIV id=u19container style="position:absolute; left:50px; top:650px; width:251px; height:26px;; overflow:visible">
-
-<DIV id=u20 style="position:absolute; left:2px; top:5.5px; width:246px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u20 style="position:absolute; left:2px; top:5.5px; width:270px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u20_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#808080; font-size:9pt;">@ 2012 SoccerKids, Inc. :: Design by</span></div></DIV></DIV>
 </DIV>
-
 <DIV id=u21container style="position:absolute; left:290px; top:650px; width:146px; height:26px;; overflow:visible">
-
-<DIV id=u22 style="position:absolute; left:2px; top:4.5px; width:141px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u22 style="position:absolute; left:30px; top:4.5px; width:141px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u22_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">soccerkids@railsfactory</span></div></DIV></DIV>
 </DIV>
-
-
-
-<DIV id=u24container style="position:absolute; left:1px; top:57px; width:821px; height:26px;; overflow:visible">
-
-<DIV id=u25 style="position:absolute; left:2px; top:4.5px; width:816px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u25_rtf>&nbsp;</DIV></DIV>
-</DIV>
-
-
-<DIV id=u26container style="position:absolute; left:626px; top:57px; width:96px; height:26px;; overflow:visible">
-
-<DIV id=u27 style="position:absolute; left:2px; top:4.5px; width:91px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u></u>&nbsp; <u></u></span></div></DIV></DIV>
-</DIV>
-
-
-
-
-
 <DIV id=u28container style="position:absolute; left:716px; top:57px; width:61px; height:26px;; overflow:visible">
-
 <DIV id=u29 style="position:absolute; left:2px; top:4.5px; width:56px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u29_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><% if user_signed_in? %>
 <%= link_to "Logout", destroy_user_session_path, :method => :delete %> <%else%>
 <%= link_to "Login", new_user_session_path, :method => :get %>
 <%end%></u>&nbsp; <u>|</u></span></div></DIV></DIV>
 </DIV>
-
 <DIV id=u28ann style="font-size:1px; position:absolute; left:767px; top:53px; width:1px; height:1px; overflow:visible"></DIV>
-
-
 <DIV id=u30container style="position:absolute; left:-1px; top:56px; width:51px; height:26px;; overflow:visible">
-
 <DIV id=u31 style="position:absolute; left:2px; top:4.5px; width:46px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u31_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%= link_to 'Home', root_path %></span></div></DIV></DIV>
 </DIV>
-
-
-
 <DIV id=u32container style="position:absolute; left:48px; top:56px; width:61px; height:26px;; overflow:visible">
-
 <DIV id=u33 style="position:absolute; left:2px; top:4.5px; width:56px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u33_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u><%= link_to 'programs', programs_path %></u></span></div></DIV></DIV>
 </DIV>
-
-<DIV id=u32ann style="font-size:1px; position:absolute; left:99px; top:52px; width:1px; height:1px; overflow:visible"></DIV>
-
-
-<DIV id=u34container style="position:absolute; left:227px; top:56px; width:151px; height:26px;; overflow:visible">
-
-<DIV id=u35 style="position:absolute; left:2px; top:4.5px; width:146px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u35_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"></span></div></DIV></DIV>
-</DIV>
-
 <DIV id=u34ann style="font-size:1px; position:absolute; left:368px; top:52px; width:1px; height:1px; overflow:visible"></DIV>
-
 <DIV id=u36container style="position:absolute; left:114px; top:56px; width:112px; height:26px;; overflow:visible">
-
-<DIV id=u37 style="position:absolute; left:2px; top:4.5px; width:107px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u37 style="position:absolute; left:2px; top:4.5px; width:150px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u37_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%= link_to 'About SoccerKids', home_AboutSoccerKids_path %></span></div></DIV></DIV>
 </DIV>
-
 <DIV id=u27 style="position:absolute; left:550px; top:60px; width:91px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-
 <DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u></u>&nbsp; </span></div></DIV></DIV>
 </DIV>
-
 <DIV id=u38container style="position:absolute; left:768px; top:57px; width:40px; height:26px;; overflow:visible">
-
 <DIV id=u39 style="position:absolute; left:2px; top:4.5px; width:35px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u39_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%= link_to 'helps', home_help_path %></span></div></DIV></DIV>
 </DIV>
-
-
-
-
-
-<DIV id=ou20 style="position:absolute; left:11px; top:12px; width:101px; height:35px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:109px; height:43px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Tabbed Registration Page_files/u20.png',sizingMethod='scale');
-"><img style="width:109px; height:43px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Tabbed Registration Page_files/u20.png" border="0" alt=""></span>
-
-</DIV>
-
-
-
 <DIV id=u65 style="position:absolute; left:600px; top:100px; width:700px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <b>Welcome: <% if user_signed_in? %>
-
   <div><%= current_user.firstname %></div>
-
 <% end %> </b>
 </DIV>
-
-
-
-
-
-
-<html >
-
-
-<body background="/images/q.jpg">
-
-
-
-</body>
-</html>
-

@@ -7,5 +7,9 @@ class Email < ActionMailer::Base
    def notif(contact)
 	mail(:from=>"chilambarasan.p@gmail.com",:to=>contact,
             :subject=>'notification', :body=>'you will get notification from soccerkids')  
-  end
+    end
+    def pay(contact,name)
+	    mail(:from=>"chilambarasan.p@gmail.com",:to=>contact,
+            :subject=>'payment notification', :body=>"you had done the payment for #{name}")  
+	    end
 end

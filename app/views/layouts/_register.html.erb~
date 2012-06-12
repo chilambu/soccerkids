@@ -64,6 +64,15 @@ src="/images/u30.png" border="0" alt=""></span>
 <DIV id=u27_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><u></u>&nbsp; </span></div></DIV></DIV>
 </DIV>
 
+<DIV id=u39 style="position:absolute; left:500px; top:2px; width:100px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u39_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%=Time.now.strftime("%eth %B %Y")%></span></div></DIV></DIV>
+</DIV>
+<DIV id=u39 style="position:absolute; left:620px; top:2px; width:35px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u39_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%= Time.now.strftime("%A") %></span></div></DIV></DIV>
+</DIV>
+<DIV id=u39 style="position:absolute; left:700px; top:2px; width:35px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u39_rtf><div style="text-align:center"><span style=" color:#000000; font-size:10pt;"><%= Time.now.strftime("%I:%M%p") %></span></div></DIV></DIV>
+</DIV>
 
 
 

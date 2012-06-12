@@ -51,14 +51,17 @@ class TransactionController < ApplicationController
 	       # Capture the money
 	gateway.capture(15000, response.authorization)	
 	flash[:notice] = "Thank you, Transaction is sucessfully completed"
-	puts "params[:player_id]"
+	puts params[:player_id]
 	#@transaction.player_id=params[:id]
 	@transaction.player_id= (params[:transaction][:player_id])
 	@transaction.save
+	
 	@player=Player.find_by_id(params[:transaction][:player_id])
 	@transaction=Transaction.last.id
 	puts @player.id
 	puts @player.transaction.id
+	@name=Player.find_by_id(@player.id)
+	Email.pay(current_user.email,@name.first_name).deliver
 	@player.update_attributes(:transaction_id => @transaction)
 	redirect_to '/home/thanks'
      end

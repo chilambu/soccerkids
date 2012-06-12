@@ -14,7 +14,7 @@ gem  'rspec'
 gem  'rspec-rails'
 gem 'rspec-core'
 gem  'shoulda'
-
+gem 'recaptcha', :require => 'recaptcha/rails'
 #gem 'tiny_mce',:git=>"git://github.com/spohlenz/tinymce-rails.git"
 # Use unicorn as the web server
 # gem 'unicorn'
