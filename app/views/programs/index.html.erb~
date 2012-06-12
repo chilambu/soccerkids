@@ -8,9 +8,9 @@
   
 <div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
    <%= link_to "#{@program.name}","program_list?pg="+@program.id.to_s%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <%= link_to "Add Product", '/pages/product?param1=value1&param2=value2' %>
+          <%#= link_to "Add Product", '/pages/product?param1=value1&param2=value2' %>
           <%= link_to 'ShowALL',events_path(:pg =>@program.id)%>
-	   <%= link_to 'New ProgramList', new_program_list_path(:pg =>@program.id)%></li><br><br >  </br>
+	   <%#= link_to 'New ProgramList', new_program_list_path(:pg =>@program.id)%></li><br><br >  </br>
 	
    <%else%>
          <%= link_to @program.name,'#', :onclick => "display('#{@program.name}');" %><br/>
@@ -38,7 +38,7 @@ function display(id){
 </script>
 <DIV id=u21 style="position:absolute; left:103px; top:-55px; width:102px; width:300px;height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u21_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:16pt;"><b>Programs list</b></span></DIV></DIV>
-<DIV id=u22 style="position:absolute; left:90px; top:-100px; width:610px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22 style="position:absolute; left:90px; top:-130px; width:610px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Here is the list of the programs in the coming seasons.... To view the details of a particular program, just click the link below.....</span></DIV></DIV>
 </DIV>
 

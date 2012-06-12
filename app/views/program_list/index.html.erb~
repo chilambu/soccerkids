@@ -8,15 +8,17 @@
     <th>ProgramList name</th>
     <th></th>
   </tr>
+<div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; toppx; width:px; height:4px; ; ;text-align:center">
 <% @program_list.each do |programlist| %>
   <tr>
-    <td><br><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
+    <td><br><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:15pt;"><u><b><li><div style="position:absolute; left:px; top:px; width:600px; height:4px; ; ;text-align:center">
     <%= link_to "#{programlist.name}",events_path(:pl => programlist.id) %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<%= link_to 'New Event', new_event_path(:pl =>programlist.id)%></td><br>
+<%#= link_to 'New Event', new_event_path(:pl =>programlist.id)%></td><br>
   </tr> 
 <% end %>
 </table>
-<DIV id=u22 style="position:absolute; left:40px; top:120px; width:610px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+</div>
+<DIV id=u22 style="position:absolute; left:40px; top:100px; width:610px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u22_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">To view the events of particular program , just click the link below.....</span></DIV></DIV>
 
 
