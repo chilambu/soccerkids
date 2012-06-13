@@ -46,7 +46,7 @@ ActionMailer::Base.smtp_settings = {
 :port => 587,
 :authentication => :plain,
 :user_name => "chilambarasan.p@gmail.com",
-:password => '123karikalan'
+:password => '**********'
 }
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)
